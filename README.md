@@ -40,8 +40,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ![Super Admin Dashboard](./screenshots/super-admin.png)
 
-
-**Super Admin Dashboard Screen, where system-wide administration and user management is handled**
+<small>*Super Admin Dashboard Screen, where system-wide administration and user management is handled*</small>
 
 **Capabilities**:
 - Complete user management (create, edit, suspend, delete users)
@@ -86,16 +85,14 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ![Landlord Dashboard Interface](./screenshots/standard-dashboard.png)
 
-
-**Landlord Dashboard Screen, where video meetings are saved and property management features are accessed**
+<small>*Landlord Dashboard Screen, where video meetings are saved and property management features are accessed*</small>
 
 **Capabilities**:
 - **Session Management**: Generate session links for residents
 
   ![Video Link Launcher](./screenshots/video-link.png)
 
-
-  **Video Link Generation Interface, where landlords create session links for residents to join video calls**
+  <small>*Video Link Generation Interface, where landlords create session links for residents to join video calls*</small>
 - **Video Communication**: Conduct video sessions with residents
 - **Room Admin Control**: Full admin control in video rooms (pointer events, screen sharing)
 - **Recording & Screenshots**: Take video recordings and screenshots during sessions
@@ -123,9 +120,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ![Access Code Interface](./screenshots/image.png)
 
-
-**Access Code Generation Screen, where residents create secure codes to share their uploaded content**
-**Purpose**: Secure content sharing and room access for residents
+<small>*Access 'Share Code', where landlord enter the share code provided from the resident and also put his details to access the shared uploads.*</small>
 
 **Features**:
 - **Unique Code Generation**: Automatic access code creation
@@ -140,8 +135,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ![Drawing Canvas Tools](./screenshots/drawing-canvas.png)
 
-
-**Drawing and Annotation Tools Interface, where users can draw, highlight, and annotate during video calls**
+<small>*Drawing and Annotation Tools Interface, where users can draw, highlight, and annotate during video calls*</small>
 **Location**: Available in video calling interface during live sessions
 **Technology**: HTML5 Canvas API
 **Purpose**: Enhanced collaboration and property inspection documentation
@@ -270,8 +264,7 @@ const useNotifications = (userEmail) => {
 
 ![Mobile Video Interface](./screenshots/video-screen.png)
 
-
-**Mobile Video Interface with Camera Controls, showing live video call with zoom, flash, and recording controls**
+<small>*Mobile Video Interface with Camera Controls, showing live video call with zoom, flash, and recording controls*</small>
 **Location**: Available in video calling interface during live sessions
 **Technology**: WebRTC MediaDevices API
 **Purpose**: Enhanced mobile video experience and remote camera control
@@ -378,8 +371,7 @@ const handleCameraTorch = async (enabled) => {
 
 ![Pointer Tracking Interface](./screenshots/video-calling.png)
 
-
-**Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections**
+<small>*Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections*</small>
 **Technology**: WebSocket + Canvas API
 **Purpose**: Enhanced remote support and collaboration
 
@@ -405,8 +397,7 @@ const handleCameraTorch = async (enabled) => {
 
 ![Video Calling Interface](./screenshots/video-calling.png)
 
-
-**Main Video Calling Interface, where real-time video communication and screen sharing takes place**
+<small>*Main Video Calling Interface, where real-time video communication and screen sharing takes place*</small>
 
 ### 1. Video Calling
 **Technology**: WebRTC PeerConnection API
@@ -463,8 +454,7 @@ const startScreenShare = async () => {
 
 ![Observer Mode Interface](./screenshots/observing.png)
 
-
-**Observer Mode Interface, where third-party users can watch video calls without participating**
+<small>*Observer Mode Interface, where third-party users can watch video calls without participating*</small>
 **Purpose**: Third-party observation of video calls
 **Features**:
 - **Read-Only Access**: Observers cannot control the call
@@ -484,8 +474,7 @@ const startScreenShare = async () => {
 
 ![AI Damp & Mould Analyser](./screenshots/ai-analyser.png)
 
-
-**AI Damp & Mould Analyser Interface, where users upload property images for automated damp and mould detection**
+<small>*AI Damp & Mould Analyser Interface, where users upload property images for automated damp and mould detection*</small>
 
 ### 1. Image Analysis Engine
 **Technology**: OpenAI GPT-4 Vision API
@@ -575,8 +564,7 @@ const analyzeImage = async (imageFile) => {
 
 ![Demo Code Interface](./screenshots/demo-code.png)
 
-
-**Demo Code Access Interface, where users can enter demo codes to access the AI analyser features**
+<small>*Demo Code Access Interface, where users can enter demo codes to access the AI analyser features*</small>
 **Purpose**: Controlled access to analyser features
 **Features**:
 - **Code Validation**: Secure demo code verification
@@ -627,8 +615,7 @@ const analyzeImage = async (imageFile) => {
 
 ![File Upload Interface](./screenshots/file-upload.png)
 
-
-**File Upload Interface, where residents upload property images, videos and information, then receive an access code to share with landlords**
+<small>*File Upload Interface, where residents upload property images, videos and information, then receive an access code to share with landlords*</small>
 
 ### 1. Multi-Media Upload System
 **Supported Formats**:
@@ -742,8 +729,7 @@ const useChatSocket = (ticketId) => {
 
 ![Support Ticket Interface](./screenshots/support-ticket.png)
 
-
-**Support Ticket Management Interface, where users can create and manage support requests**
+<small>*Support Ticket Management Interface, where users can create and manage support requests*</small>
 **Features**:
 - **Ticket Creation**: Multi-category ticket submission
 - **File Attachments**: Support document uploads
@@ -762,8 +748,7 @@ const useChatSocket = (ticketId) => {
 
 ![Feedback Interface](./screenshots/feedback.png)
 
-
-**Feedback Collection Interface, where users can provide feedback and rate their experience**
+<small>*Feedback Collection Interface, where users can provide feedback and rate their experience*</small>
 **Types**:
 - **Session Feedback**: Post-call feedback collection
 - **Feature Feedback**: Specific feature ratings
@@ -954,8 +939,7 @@ const useChatSocket = (ticketId) => {
 
 ![D&M AI Chat Interface](./screenshots/chat-karla.png)
 
-
-**AI Chat Interface (Karla), where users can chat with an AI assistant specialized in damp and mould analysis**
+<small>*AI Chat Interface (Karla), where users can chat with an AI assistant specialized in damp and mould analysis*</small>
 **Purpose**: AI-powered customer support
 **Features**:
 - **Damp & Mould Expertise**: Specialized knowledge base
