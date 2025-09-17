@@ -331,7 +331,6 @@ const handleCameraTorch = async (enabled) => {
 - **Repair Requirements**: Work completion specifications
 
 ### 5. Demo Meeting & Callback System
-![Demo Meeting Interface](./screenshots/demo-code.png)
 **Location**: Available on the main website homepage and contact pages
 **Technology**: Form-based request system with backend processing
 **Purpose**: Lead generation and customer engagement
