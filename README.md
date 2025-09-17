@@ -39,6 +39,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Purpose**: System-wide administration and oversight of the entire VideoDesk platform
 
 ![Super Admin Dashboard](./screenshots/super-admin.png)
+**Super Admin Dashboard Screen, where system-wide administration and user management is handled**
 
 **Capabilities**:
 - Complete user management (create, edit, suspend, delete users)
@@ -82,10 +83,12 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard`
 
 ![Landlord Dashboard Interface](./screenshots/standard-dashboard.png)
+**Landlord Dashboard Screen, where video meetings are saved and property management features are accessed**
 
 **Capabilities**:
 - **Session Management**: Generate session links for residents
   ![Video Link Launcher](./screenshots/video-link.png)
+  **Video Link Generation Interface, where landlords create session links for residents to join video calls**
 - **Video Communication**: Conduct video sessions with residents
 - **Room Admin Control**: Full admin control in video rooms (pointer events, screen sharing)
 - **Recording & Screenshots**: Take video recordings and screenshots during sessions
@@ -111,6 +114,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ### Access Code System
 ![Access Code Interface](./screenshots/image.png)
+**Access Code Generation Screen, where residents create secure codes to share their uploaded content**
 **Purpose**: Secure content sharing and room access for residents
 
 **Features**:
@@ -124,6 +128,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ### 1. Advanced Drawing & Annotation Tools
 ![Drawing Canvas Tools](./screenshots/drawing-canvas.png)
+**Drawing and Annotation Tools Interface, where users can draw, highlight, and annotate during video calls**
 **Location**: Available in video calling interface during live sessions
 **Technology**: HTML5 Canvas API
 **Purpose**: Enhanced collaboration and property inspection documentation
@@ -309,7 +314,6 @@ const handleCameraTorch = async (enabled) => {
 - **Reset Function**: Return to default settings
 
 ### 4. Special Notes & Feedback Collection
-![Special Notes Interface](./screenshots/feedback.png)
 **Location**: Available in video calling interface and property upload forms
 **Technology**: Structured form system with JSON storage
 **Purpose**: Comprehensive property inspection documentation
@@ -354,6 +358,7 @@ const handleCameraTorch = async (enabled) => {
 
 ### 6. Real-time Pointer Tracking
 ![Pointer Tracking Interface](./screenshots/video-calling.png)
+**Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections**
 **Technology**: WebSocket + Canvas API
 **Purpose**: Enhanced remote support and collaboration
 
@@ -378,6 +383,7 @@ const handleCameraTorch = async (enabled) => {
 ## WebRTC Video Communication
 
 ![Video Calling Interface](./screenshots/video-calling.png)
+**Main Video Calling Interface, where real-time video communication and screen sharing takes place**
 
 ### 1. Video Calling
 **Technology**: WebRTC PeerConnection API
@@ -432,6 +438,7 @@ const startScreenShare = async () => {
 
 ### 3. Observer Mode
 ![Observer Mode Interface](./screenshots/observing.png)
+**Observer Mode Interface, where third-party users can watch video calls without participating**
 **Purpose**: Third-party observation of video calls
 **Features**:
 - **Read-Only Access**: Observers cannot control the call
@@ -450,6 +457,7 @@ const startScreenShare = async () => {
 ## AI-Powered Damp & Mould Analyser
 
 ![AI Damp & Mould Analyser](./screenshots/ai-analyser.png)
+**AI Damp & Mould Analyser Interface, where users upload property images for automated damp and mould detection**
 
 ### 1. Image Analysis Engine
 **Technology**: OpenAI GPT-4 Vision API
@@ -537,6 +545,7 @@ const analyzeImage = async (imageFile) => {
 
 ### 5. Demo Code System
 ![Demo Code Interface](./screenshots/demo-code.png)
+**Demo Code Access Interface, where users can enter demo codes to access the AI analyser features**
 **Purpose**: Controlled access to analyser features
 **Features**:
 - **Code Validation**: Secure demo code verification
@@ -586,6 +595,7 @@ const analyzeImage = async (imageFile) => {
 ## File Upload & Sharing
 
 ![File Upload Interface](./screenshots/file-upload.png)
+**File Upload Interface, where residents upload property images, videos and information, then receive an access code to share with landlords**
 
 ### 1. Multi-Media Upload System
 **Supported Formats**:
@@ -697,6 +707,7 @@ const useChatSocket = (ticketId) => {
 
 ### 1. Support Ticket Management
 ![Support Ticket Interface](./screenshots/support-ticket.png)
+**Support Ticket Management Interface, where users can create and manage support requests**
 **Features**:
 - **Ticket Creation**: Multi-category ticket submission
 - **File Attachments**: Support document uploads
@@ -713,6 +724,7 @@ const useChatSocket = (ticketId) => {
 
 ### 2. Feedback System
 ![Feedback Interface](./screenshots/feedback.png)
+**Feedback Collection Interface, where users can provide feedback and rate their experience**
 **Types**:
 - **Session Feedback**: Post-call feedback collection
 - **Feature Feedback**: Specific feature ratings
@@ -901,6 +913,7 @@ const useChatSocket = (ticketId) => {
 
 ### 1. D&M AI Chat Interface
 ![D&M AI Chat Interface](./screenshots/chat-karla.png)
+**AI Chat Interface (Karla), where users can chat with an AI assistant specialized in damp and mould analysis**
 **Purpose**: AI-powered customer support
 **Features**:
 - **Damp & Mould Expertise**: Specialized knowledge base
