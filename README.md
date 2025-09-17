@@ -38,7 +38,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard/superadmin`
 **Purpose**: System-wide administration and oversight of the entire VideoDesk platform
 
-![Super Admin Dashboard](./webrtc-share/public/screenshots/super-admin.png)
+![Super Admin Dashboard](./screenshots/super-admin.png)
 
 **Capabilities**:
 - Complete user management (create, edit, suspend, delete users)
@@ -81,11 +81,11 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Access Level**: Property management focused
 **Dashboard**: `/dashboard`
 
-![Landlord Dashboard Interface](./webrtc-share/public/screenshots/standard-dashboard.png)
+![Landlord Dashboard Interface](./screenshots/standard-dashboard.png)
 
 **Capabilities**:
 - **Session Management**: Generate session links for residents
-  ![Video Link Launcher](./webrtc-share/public/screenshots/video-link.png)
+  ![Video Link Launcher](./screenshots/video-link.png)
 - **Video Communication**: Conduct video sessions with residents
 - **Room Admin Control**: Full admin control in video rooms (pointer events, screen sharing)
 - **Recording & Screenshots**: Take video recordings and screenshots during sessions
@@ -102,7 +102,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard`
 **Purpose**: Property residents who need to upload content, generate access codes, and participate in video sessions with landlords
 
-![Resident Dashboard Interface](./webrtc-share/public/screenshots/standard-dashboard.png)
+![Resident Dashboard Interface](./screenshots/standard-dashboard.png)
 
 **Capabilities**:
 - **File Upload**: Upload property images and videos
@@ -112,7 +112,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 - **Content Sharing**: Share content via generated access codes
 
 ### Access Code System
-![Access Code Interface](./webrtc-share/public/screenshots/video-link.png)
+![Access Code Interface](./screenshots/video-link.png)
 **Purpose**: Secure content sharing and room access for residents
 
 **Features**:
@@ -125,7 +125,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 ## Core Features
 
 ### 1. Advanced Drawing & Annotation Tools
-![Drawing Canvas Tools](./webrtc-share/public/screenshots/drawing-canvas.png)
+![Drawing Canvas Tools](./screenshots/drawing-canvas.png)
 **Location**: Available in video calling interface during live sessions
 **Technology**: HTML5 Canvas API
 **Purpose**: Enhanced collaboration and property inspection documentation
@@ -196,7 +196,7 @@ const draw = (e) => {
 - Visual communication during video calls
 
 ### 2. Real-time Notifications System
-![Notification Icon](./webrtc-share/public/icons/chat-notification.png)
+
 **Location**: Accessible via notification bell icon in the top navigation bar
 **Technology**: Socket.IO WebSocket connections
 **Purpose**: Instant user engagement and activity tracking
@@ -251,7 +251,6 @@ const useNotifications = (userEmail) => {
 - File upload confirmations
 
 ### 3. Camera Controls & Mobile Features
-![Mobile Phone Interface](./webrtc-share/public/mobile_2.jpg)
 **Location**: Available in video calling interface during live sessions
 **Technology**: WebRTC MediaDevices API
 **Purpose**: Enhanced mobile video experience and remote camera control
@@ -312,7 +311,7 @@ const handleCameraTorch = async (enabled) => {
 - **Reset Function**: Return to default settings
 
 ### 4. Special Notes & Feedback Collection
-![Special Notes Interface](./webrtc-share/public/screenshots/feedback.png)
+![Special Notes Interface](./screenshots/feedback.png)
 **Location**: Available in video calling interface and property upload forms
 **Technology**: Structured form system with JSON storage
 **Purpose**: Comprehensive property inspection documentation
@@ -334,7 +333,7 @@ const handleCameraTorch = async (enabled) => {
 - **Repair Requirements**: Work completion specifications
 
 ### 5. Demo Meeting & Callback System
-![Demo Meeting Interface](./webrtc-share/public/screenshots/demo-code.png)
+![Demo Meeting Interface](./screenshots/demo-code.png)
 **Location**: Available on the main website homepage and contact pages
 **Technology**: Form-based request system with backend processing
 **Purpose**: Lead generation and customer engagement
@@ -357,7 +356,7 @@ const handleCameraTorch = async (enabled) => {
 **Training Video**: [Watch the training video for this feature](https://example.com/training-video)
 
 ### 6. Real-time Pointer Tracking
-![Pointer Tracking Interface](./webrtc-share/public/screenshots/video-calling.png)
+![Pointer Tracking Interface](./screenshots/video-calling.png)
 **Technology**: WebSocket + Canvas API
 **Purpose**: Enhanced remote support and collaboration
 
@@ -381,7 +380,7 @@ const handleCameraTorch = async (enabled) => {
 
 ## WebRTC Video Communication
 
-![Video Calling Interface](./webrtc-share/public/screenshots/video-calling.png)
+![Video Calling Interface](./screenshots/video-calling.png)
 
 ### 1. Video Calling
 **Technology**: WebRTC PeerConnection API
@@ -435,7 +434,7 @@ const startScreenShare = async () => {
 - **Permission Management**: Automatic permission handling
 
 ### 3. Observer Mode
-![Observer Mode Interface](./webrtc-share/public/screenshots/observing.png)
+![Observer Mode Interface](./screenshots/observing.png)
 **Purpose**: Third-party observation of video calls
 **Features**:
 - **Read-Only Access**: Observers cannot control the call
@@ -453,7 +452,7 @@ const startScreenShare = async () => {
 
 ## AI-Powered Damp & Mould Analyser
 
-![AI Damp & Mould Analyser](./webrtc-share/public/screenshots/ai-analyser.png)
+![AI Damp & Mould Analyser](./screenshots/ai-analyser.png)
 
 ### 1. Image Analysis Engine
 **Technology**: OpenAI GPT-4 Vision API
@@ -540,7 +539,7 @@ const analyzeImage = async (imageFile) => {
 - **Regulatory Compliance**: UK housing regulations
 
 ### 5. Demo Code System
-![Demo Code Interface](./webrtc-share/public/screenshots/demo-code.png)
+![Demo Code Interface](./screenshots/demo-code.png)
 **Purpose**: Controlled access to analyser features
 **Features**:
 - **Code Validation**: Secure demo code verification
@@ -589,7 +588,7 @@ const analyzeImage = async (imageFile) => {
 
 ## File Upload & Sharing
 
-![File Upload Interface](./webrtc-share/public/screenshots/file-upload.png)
+![File Upload Interface](./screenshots/file-upload.png)
 
 ### 1. Multi-Media Upload System
 **Supported Formats**:
@@ -700,7 +699,7 @@ const useChatSocket = (ticketId) => {
 ## Support & Feedback System
 
 ### 1. Support Ticket Management
-![Support Ticket Interface](./webrtc-share/public/screenshots/support-ticket.png)
+![Support Ticket Interface](./screenshots/support-ticket.png)
 **Features**:
 - **Ticket Creation**: Multi-category ticket submission
 - **File Attachments**: Support document uploads
@@ -716,7 +715,7 @@ const useChatSocket = (ticketId) => {
 - General Support
 
 ### 2. Feedback System
-![Feedback Interface](./webrtc-share/public/screenshots/feedback.png)
+![Feedback Interface](./screenshots/feedback.png)
 **Types**:
 - **Session Feedback**: Post-call feedback collection
 - **Feature Feedback**: Specific feature ratings
@@ -904,7 +903,7 @@ const useChatSocket = (ticketId) => {
 ## AI Chat Bot Integration
 
 ### 1. D&M AI Chat Interface
-![D&M AI Chat Interface](./webrtc-share/public/screenshots/chat-karla.png)
+![D&M AI Chat Interface](./screenshots/chat-karla.png)
 **Purpose**: AI-powered customer support
 **Features**:
 - **Damp & Mould Expertise**: Specialized knowledge base
