@@ -254,6 +254,8 @@ const useNotifications = (userEmail) => {
 - File upload confirmations
 
 ### 3. Camera Controls & Mobile Features
+![Mobile Video Interface](./screenshots/video-screen.png)
+**Mobile Video Interface with Camera Controls, showing live video call with zoom, flash, and recording controls**
 **Location**: Available in video calling interface during live sessions
 **Technology**: WebRTC MediaDevices API
 **Purpose**: Enhanced mobile video experience and remote camera control
