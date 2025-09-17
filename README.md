@@ -102,8 +102,6 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard`
 **Purpose**: Property residents who need to upload content, generate access codes, and participate in video sessions with landlords
 
-![Resident Dashboard Interface](./screenshots/standard-dashboard.png)
-
 **Capabilities**:
 - **File Upload**: Upload property images and videos
 - **AI Analyser Access**: Use damp and mould analyser
@@ -112,7 +110,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 - **Content Sharing**: Share content via generated access codes
 
 ### Access Code System
-![Access Code Interface](./screenshots/video-link.png)
+![Access Code Interface](./screenshots/image.png)
 **Purpose**: Secure content sharing and room access for residents
 
 **Features**:
