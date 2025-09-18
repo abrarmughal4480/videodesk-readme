@@ -33,6 +33,22 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ## User Roles & Permissions
 
+VideoDesk has **4 distinct user roles**, each with specific access levels and capabilities:
+
+### **Role Creation Process:**
+- **Super Admin**: Created by system administrators during initial setup
+- **Company Admin**: Created by Super Admin for company management
+- **Landlord**: Created by Company Admin or Super Admin for property management
+- **Resident**: Self-registered through landing page or invited by landlords
+
+### **Role Hierarchy:**
+1. **Super Admin** (Highest level - System-wide access)
+2. **Company Admin** (Company-level management)
+3. **Landlord** (Property management focus)
+4. **Resident** (Basic user access)
+
+---
+
 ### 1. Super Admin
 **Access Level**: Full system access
 **Dashboard**: `/dashboard/superadmin`
@@ -103,12 +119,12 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 - **Session Sharing**: Share completed sessions with others
 - **Print Functionality**: Print session reports and documentation
 - **Access Tracking**: View who has accessed sessions and when
-- **Message Management**: Amend and manage messages *(Access via dashboard action button dropdown)*
-- **Team Collaboration**: Invite co-workers to sessions *(Access via dashboard action button dropdown)*
-- **Profile Management**: Set profile images and company logos *(Access via dashboard action button dropdown)*
+- **Message Management**: Amend and manage messages *(Access via Dashboard 'Actions' button dropdown)*
+- **Team Collaboration**: Invite co-workers to sessions *(Access via Dashboard 'Actions' button dropdown)*
+- **Profile Management**: Set profile images and company logos *(Access via Dashboard 'Actions' button dropdown)*
 - **Property Inspections**: Create and manage property inspections
 
-**Dashboard Action Button**: Located in the top right corner of the dashboard, this action button opens a dropdown menu providing quick access to the above features. Users should look for this button to access Message Management, Team Collaboration, and Profile Management tools.
+**Dashboard 'Actions' Button**: Located in the top right corner of the Dashboard, this 'Actions' button opens a dropdown menu providing quick access to the above features. Users should look for this button to access Message Management, Team Collaboration, and Profile Management tools.
 
 ![Dashboard Action Button Dropdown](./screenshots/action-dropdown.png) *(Image 1.3b)*
 
@@ -456,7 +472,7 @@ const handleCameraTorch = async (enabled) => {
 **Location**: 
 - **Landing Page**: Header (4th section "Launch New Video Link") and header link
 - **Dashboard**: Profile section below - orange button
-- **How-to Guide**: Available in Actions dropdown menu
+- **How-to Guide**: Available in 'Actions' dropdown menu
 
 **Technology**: WebRTC PeerConnection API
 **STUN/TURN Servers**: Configured for NAT traversal
@@ -583,6 +599,8 @@ const startScreenShare = async () => {
 - **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
 - **Logged In**: Header profile icon → dropdown menu
 
+**Demo Code Required**: Demo code is required to access AI analyser features (see [Image 4.2](#demo-code-system) for demo code interface)
+
 ![Landing Page Profile Dropdown](./screenshots/landing-page-profile-dropdown.png) *(Image 4.1a)*
 
 <small>*Landing Page Profile Dropdown, showing AI Damp and Mould Assistant, AI Image Analyser, and other options*</small>
@@ -597,6 +615,7 @@ const startScreenShare = async () => {
 - **Mould Growth Prediction**: Predictive analysis models
 - **Prevention Recommendations**: Actionable advice generation
 - **24/7 Automated Reporting**: Continuous monitoring capability
+- **Text-to-Speech**: Blue "Listen" button for audio analysis summary
 
 **Technical Implementation**:
 
@@ -794,14 +813,14 @@ const fileToBase64 = (file) => {
 **Real-time Chat Access Locations**:
 
 **For Landlords**:
-- Navigate to **Actions** → **Support Tickets** → **Escalate Ticket** → **Chat Screen**
+- Navigate to **'Actions'** → **'Support Tickets'** → **'Escalate Ticket'** → **'Chat Screen'**
 
 ![Escalate Ticket Interface](./screenshots/escalate-ticket.png) *(Image 6.1)*
 
 <small>*Escalate Ticket Interface, where landlords can escalate tickets and access real-time chat support*</small>
 
 **For Super Admin**:
-- Navigate to **Support Center** → **Support Tickets** → **Actions** → **Support Chat** → **Chat Screen**
+- Navigate to **'Support Center'** → **'Support Tickets'** → **'Actions'** → **'Support Chat'** → **'Chat Screen'**
 
 ![Admin Support Chat Interface](./screenshots/admin-side-support.png) *(Image 6.2)*
 
@@ -863,7 +882,7 @@ const useChatSocket = (ticketId) => {
 <small>*Support Ticket Management Interface, where users can create and manage support requests*</small>
 
 **Location**: 
-- **Landlords**: Dashboard Actions dropdown → Raise Support Ticket
+- **Landlords**: Dashboard 'Actions' dropdown → 'Raise Support Ticket'
 
 
 **Features**:
@@ -885,6 +904,11 @@ const useChatSocket = (ticketId) => {
 ![Feedback Interface](./screenshots/feedback.png) *(Image 7.2)*
 
 <small>*Feedback Collection Interface, where users can provide feedback and rate their experience*</small>
+
+**Location**: Automatically access on landing page when video call ends
+
+**Important Note**: The feedback popup is a one-time access feature. Once closed, users cannot reopen it to provide feedback again. Please ensure all feedback is completed before closing the popup.
+
 **Types**:
 - **Session Feedback**: Post-call feedback collection
 - **Feature Feedback**: Specific feature ratings
@@ -927,6 +951,8 @@ const useChatSocket = (ticketId) => {
 **Technology**: Custom session tracking with analytics
 **Purpose**: Comprehensive session monitoring and reporting
 
+**Location**: Company Admin Dashboard → Session Analytics tab
+
 ![Session Analytics Dashboard](./screenshots/session-analytics.png) *(Image 8.1)*
 
 <small>*Session Analytics Dashboard, showing total sessions, total minutes, average duration, active users, and sessions per officer with a custom date range*</small>
@@ -943,7 +969,12 @@ const useChatSocket = (ticketId) => {
 **Technology**: JWT authentication with data encryption
 **Purpose**: Secure data handling and user privacy protection
 
+![OTP Security Verification](./screenshots/otp-security.png) *(Image 8.2)*
+
+<small>*OTP Security Verification, showing One Time Password verification modal for secure user login*</small>
+
 **Features**:
+- **OTP Authentication**: One Time Password required for user login
 - **Data Encryption**: End-to-end data encryption
 - **Secure File Upload**: Encrypted file transfer
 - **Access Control**: Role-based access restrictions
@@ -1084,6 +1115,9 @@ const useChatSocket = (ticketId) => {
 **Location**: 
 - **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
 - **Logged In**: Header profile icon → dropdown menu
+
+**Demo Code Required**: Demo code is required to access AI chat bot (see [Image 4.2](#demo-code-system) for demo code interface)
+
 **Purpose**: AI-powered customer support
 **Features**:
 - **Damp & Mould Expertise**: Specialized knowledge base
