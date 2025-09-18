@@ -422,6 +422,8 @@ const handleCameraTorch = async (enabled) => {
 
 <small>*Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections*</small>
 
+**Location**: On Video container - hold mouse to show red dot (visible to both landlord and resident)
+
 **Technology**: WebSocket + Canvas API
 
 **Purpose**: Enhanced remote support and collaboration
@@ -451,6 +453,11 @@ const handleCameraTorch = async (enabled) => {
 <small>*Main Video Calling Interface, where real-time video communication and screen sharing takes place*</small>
 
 ### 1. Video Calling
+**Location**: 
+- **Landing Page**: Header (4th section "Launch New Video Link") and header link
+- **Dashboard**: Profile section below - orange button
+- **How-to Guide**: Available in Actions dropdown menu
+
 **Technology**: WebRTC PeerConnection API
 **STUN/TURN Servers**: Configured for NAT traversal
 
@@ -571,6 +578,14 @@ const startScreenShare = async () => {
 ![AI Damp & Mould Analyser](./screenshots/ai-analyser.png) *(Image 4.1)*
 
 <small>*AI Damp & Mould Analyser Interface, where users upload property images for automated damp and mould detection*</small>
+
+**Location**: 
+- **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
+- **Logged In**: Header profile icon → dropdown menu
+
+![Landing Page Profile Dropdown](./screenshots/landing-page-profile-dropdown.png) *(Image 4.1a)*
+
+<small>*Landing Page Profile Dropdown, showing AI Damp and Mould Assistant, AI Image Analyser, and other options*</small>
 
 ### 1. Image Analysis Engine
 **Technology**: OpenAI GPT-4 Vision API
@@ -712,6 +727,10 @@ const analyzeImage = async (imageFile) => {
 
 <small>*File Upload Interface, where residents upload property images, videos and information, then receive an access code to share with landlords*</small>
 
+**Location**: 
+- **Resident Dashboard**: Header top right corner - orange button (right of bell icon)
+- **Landing Page**: Footer bottom right - first orange button
+
 ### 1. Multi-Media Upload System
 **Supported Formats**:
 - **Images**: JPEG, PNG, WebP (max 6 images)
@@ -842,6 +861,10 @@ const useChatSocket = (ticketId) => {
 ![Support Ticket Interface](./screenshots/support-ticket.png) *(Image 7.1)*
 
 <small>*Support Ticket Management Interface, where users can create and manage support requests*</small>
+
+**Location**: 
+- **Landlords**: Dashboard Actions dropdown → Raise Support Ticket
+
 
 **Features**:
 - **Ticket Creation**: Multi-category ticket submission
@@ -1054,9 +1077,13 @@ const useChatSocket = (ticketId) => {
 
 ### 1. D&M AI Chat Interface
 
-![D&M AI Chat Interface](./screenshots/chat-karla.png) *(Image 9.1)*
+![AI Chat Interface](./screenshots/chat-karla.png) *(Image 9.1)*
 
-<small>*AI Chat Interface (Karla), where users can chat with an AI assistant specialized in damp and mould analysis*</small>
+<small>*AI Chat Interface, where users can chat with an AI assistant specialized in damp and mould analysis*</small>
+
+**Location**: 
+- **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
+- **Logged In**: Header profile icon → dropdown menu
 **Purpose**: AI-powered customer support
 **Features**:
 - **Damp & Mould Expertise**: Specialized knowledge base
