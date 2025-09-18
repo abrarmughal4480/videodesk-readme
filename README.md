@@ -38,7 +38,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard/superadmin`
 **Purpose**: System-wide administration and oversight of the entire VideoDesk platform
 
-![Super Admin Dashboard](./screenshots/super-admin.png)
+![Super Admin Dashboard](./screenshots/super-admin.png) *(Image 1.1)*
 
 <small>*Super Admin Dashboard Screen, where system-wide administration and user management is handled*</small>
 
@@ -64,7 +64,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard/companyadmin`
 **Purpose**: Manage and oversee users and operations within their specific company
 
-![Company Admin Dashboard](./screenshots/company-dashboard.png)
+![Company Admin Dashboard](./screenshots/company-dashboard.png) *(Image 1.2)*
 
 <small>*Company Admin Dashboard Interface, showing comprehensive metrics, session analytics, storage usage, and user management capabilities*</small>
 
@@ -87,14 +87,14 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Access Level**: Property management focused
 **Dashboard**: `/dashboard`
 
-![Landlord Dashboard Interface](./screenshots/standard-dashboard.png)
+![Landlord Dashboard Interface](./screenshots/standard-dashboard.png) *(Image 1.3)*
 
 <small>*Landlord Dashboard Screen, where video meetings are saved and property management features are accessed*</small>
 
 **Capabilities**:
 - **Session Management**: Generate session links for residents
 
-  ![Video Link Launcher](./screenshots/video-link.png)
+  ![Video Link Launcher](./screenshots/video-link.png) *(Image 1.3a)*
 
   <small>*Video Link Generation Interface, where landlords create session links for residents to join video calls*</small>
 - **Video Communication**: Conduct video sessions with residents
@@ -110,12 +110,16 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 **Dashboard Action Button**: Located in the top right corner of the dashboard, this action button opens a dropdown menu providing quick access to the above features. Users should look for this button to access Message Management, Team Collaboration, and Profile Management tools.
 
+![Dashboard Action Button Dropdown](./screenshots/action-dropdown.png) *(Image 1.3b)*
+
+<small>*Dashboard Action Button Dropdown, showing various administrative and user-specific actions including Logout, Dashboard, Support Tickets, Password Reset, and more*</small>
+
 ### 4. Resident
 **Access Level**: Basic user access
 **Dashboard**: `/dashboard`
 **Purpose**: Property residents who need to upload content, generate access codes, and participate in video sessions with landlords
 
-![Resident Dashboard](./screenshots/resident.png)
+![Resident Dashboard](./screenshots/resident.png) *(Image 1.4)*
 
 <small>*Resident Dashboard Interface, where residents can view their share code uploads, manage content, and track visitor statistics*</small>
 
@@ -136,7 +140,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ### Access Code System
 
-![Access Code Interface](./screenshots/image.png)
+![Access Code Interface](./screenshots/image.png) *(Image 1.5)*
 
 <small>*Access 'Share Code', where landlord enter the share code provided from the resident and also put his details to access the shared uploads.*</small>
 
@@ -145,6 +149,8 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Features**:
 - **Unique Code Generation**: Automatic access code creation
 - **Time-Limited Access**: 15-minute timeout for guest users
+- **Session Management**: 15-minute session duration for landlord access to resident's shared content
+- **Session Expiry**: Automatic session expiration after 15 minutes
 - **Role-Based Access**: Different permissions based on user role
 - **Secure Sharing**: Codes can be shared via URL parameters
 - **Content Association**: Codes linked to specific uploads or rooms
@@ -153,7 +159,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
 ### 1. Advanced Drawing & Annotation Tools
 
-![Drawing Canvas Tools](./screenshots/drawing-canvas.png)
+![Drawing Canvas Tools](./screenshots/drawing-canvas.png) *(Image 2.1)*
 
 <small>*Drawing and Annotation Tools Interface, where users can draw, highlight, and annotate during video calls*</small>
 
@@ -230,7 +236,7 @@ const draw = (e) => {
 
 ### 2. Real-time Notifications System
 
-![Real-time Notifications](./screenshots/notification.png)
+![Real-time Notifications](./screenshots/notification.png) *(Image 2.2)*
 
 <small>*Real-time Notifications Interface, showing success notification when landlord accesses shared content with share code and timestamp*</small>
 
@@ -285,7 +291,7 @@ const useNotifications = (userEmail) => {
 
 ### 3. Camera Controls & Mobile Features
 
-![Mobile Video Interface](./screenshots/video-screen.png)
+![Mobile Video Interface](./screenshots/video-screen.png) *(Image 2.3)*
 
 <small>*Mobile Video Interface with Camera Controls, showing live video call with zoom, flash, and recording controls*</small>
 
@@ -351,11 +357,11 @@ const handleCameraTorch = async (enabled) => {
 
 ### 4. Special Notes 
 
-![Special Notes Interface](./screenshots/special-notes.png)
+![Special Notes Interface](./screenshots/special-notes.png) *(Image 2.4)*
 
 <small>*Special Notes Modal Interface, where users can set communication preferences, access instructions, repair requests, and safety alerts for property visits*</small>
 
-**Location**: Available in video calling interface and property upload forms
+**Location**: Video calling interface - right bottom corner support icon (click to open popup)
 
 **Technology**: Structured form system with JSON storage
 
@@ -379,11 +385,11 @@ const handleCameraTorch = async (enabled) => {
 
 ### 5. Demo Meeting & Callback System
 
-![Demo Meeting Modal](./screenshots/demo-meeting.png)
+![Demo Meeting Modal](./screenshots/demo-meeting.png) *(Image 2.5)*
 
 <small>*Demo Meeting Booking Modal, where users can schedule product demonstrations with date and time selection*</small>
 
-![Callback Request Modal](./screenshots/call-back.png)
+![Callback Request Modal](./screenshots/call-back.png) *(Image 2.6)*
 
 <small>*Callback Request Modal, where users can request phone callbacks with preferred time and contact details*</small>
 
@@ -412,7 +418,7 @@ const handleCameraTorch = async (enabled) => {
 
 ### 6. Real-time Pointer Tracking
 
-![Pointer Tracking Interface](./screenshots/video-calling.png)
+![Pointer Tracking Interface](./screenshots/video-calling.png) *(Image 2.7)*
 
 <small>*Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections*</small>
 
@@ -440,7 +446,7 @@ const handleCameraTorch = async (enabled) => {
 
 ## WebRTC Video Communication
 
-![Video Calling Interface](./screenshots/video-calling.png)
+![Video Calling Interface](./screenshots/video-calling.png) *(Image 3.1)*
 
 <small>*Main Video Calling Interface, where real-time video communication and screen sharing takes place*</small>
 
@@ -486,45 +492,54 @@ const startScreenShare = async () => {
 };
 ```
 
-### 2. Screen Sharing
+### 2. Screen Sharing & Observer Mode
 **Technology**: getDisplayMedia API
+
+![Screen Sharing & Observer Interface](./screenshots/observing.png) *(Image 3.2)*
+
+<small>*Screen Sharing & Observer Interface, where landlords can share their screen and company admins can observe video calls*</small>
+
+**Location**: 
+- **Screen Sharing**: Available during video calls for landlords
+- **Observer Mode**: Company Admin Panel → User Management → Action buttons (Monitor icon) for users currently in video rooms
+
+**Purpose**: Screen sharing for landlords and observation for company admins
+
 **Features**:
 - **Browser Surface Sharing**: Share entire browser content
 - **Cursor Tracking**: Always show cursor position
 - **High Resolution**: Up to 1920x1080 at 30fps
 - **Audio Support**: Optional audio sharing
 - **Permission Management**: Automatic permission handling
-
-### 3. Observer Mode
-
-![Observer Mode Interface](./screenshots/observing.png)
-
-<small>*Observer Mode Interface, where third-party users can watch video calls without participating*</small>
-
-**Location**: Company Admin Panel → User Management → Action buttons (Monitor icon) for users currently in video rooms
-
-**Purpose**: Third-party observation of video calls
-**Features**:
+- **Admin Observation**: Company admins can view landlord's shared screen
 - **Read-Only Access**: Observers cannot control the call
 - **Real-time Viewing**: Live video stream access
 - **Meeting Integration**: Link generation for observers
 - **Session Recording**: Optional call recording capabilities
 
-### 4. Recording & Screenshots
+### 3. Recording & Screenshots
+
+![Recording Interface](./screenshots/video-calling.png) *(Image 3.3)*
+
+<small>*Recording Interface, showing red and green buttons at the bottom of video call for recording and screenshot capture*</small>
+
+**Location**: Left section under the video calling interface - two buttons 'Record Video' and 'Take Screenshot'
+
 **Features**:
-- **Screenshot Capture**: Instant image capture during calls
-- **Video Recording**: Full call recording with MediaRecorder API
+- **Screenshot Capture**: Instant image capture during calls (Green button)
+- **Video Recording**: Full call recording with MediaRecorder API (Red button)
 - **Cloud Storage**: Automatic upload to S3-compatible storage
 - **Duplicate Prevention**: Hash-based duplicate detection
 - **Progress Tracking**: Real-time upload progress
+- **Bottom Controls**: Recording controls located at bottom of video interface
 
-### 5. Resend Video Link Feature
+### 4. Resend Video Link Feature
 
-![Resend Button](./screenshots/resend-button.png)
+![Resend Button](./screenshots/resend-button.png) *(Image 3.4)*
 
 <small>*Resend Video Link Button, showing the orange resend button with timer in the bottom right corner of the video screen*</small>
 
-![Resend Popup](./screenshots/resend-popup.png)
+![Resend Popup](./screenshots/resend-popup.png) *(Image 3.5)*
 
 <small>*Resend Video Link Popup, where users can edit contact details and resend video links with a 10-minute timer*</small>
 
@@ -553,7 +568,7 @@ const startScreenShare = async () => {
 
 ## AI-Powered Damp & Mould Analyser
 
-![AI Damp & Mould Analyser](./screenshots/ai-analyser.png)
+![AI Damp & Mould Analyser](./screenshots/ai-analyser.png) *(Image 4.1)*
 
 <small>*AI Damp & Mould Analyser Interface, where users upload property images for automated damp and mould detection*</small>
 
@@ -643,13 +658,12 @@ const analyzeImage = async (imageFile) => {
 
 ### 5. Demo Code System
 
-![Demo Code Interface](./screenshots/demo-code.png)
+![Demo Code Interface](./screenshots/demo-code.png) *(Image 4.2)*
 
 <small>*Demo Code Access Interface, where users can enter demo codes to access the AI analyser features*</small>
 **Purpose**: Controlled access to analyser features
 **Features**:
 - **Code Validation**: Secure demo code verification
-- **Session Management**: Time-limited access
 - **Usage Tracking**: Analytics and monitoring
 - **Feature Gating**: Controlled feature access
 
@@ -694,7 +708,7 @@ const analyzeImage = async (imageFile) => {
 
 ## File Upload & Sharing
 
-![File Upload Interface](./screenshots/file-upload.png)
+![File Upload Interface](./screenshots/file-upload.png) *(Image 5.1)*
 
 <small>*File Upload Interface, where residents upload property images, videos and information, then receive an access code to share with landlords*</small>
 
@@ -757,6 +771,23 @@ const fileToBase64 = (file) => {
 
 ### 1. Real-Time Chat
 **Technology**: Socket.IO WebSocket connections
+
+**Real-time Chat Access Locations**:
+
+**For Landlords**:
+- Navigate to **Actions** → **Support Tickets** → **Escalate Ticket** → **Chat Screen**
+
+![Escalate Ticket Interface](./screenshots/escalate-ticket.png) *(Image 6.1)*
+
+<small>*Escalate Ticket Interface, where landlords can escalate tickets and access real-time chat support*</small>
+
+**For Super Admin**:
+- Navigate to **Support Center** → **Support Tickets** → **Actions** → **Support Chat** → **Chat Screen**
+
+![Admin Support Chat Interface](./screenshots/admin-side-support.png) *(Image 6.2)*
+
+<small>*Admin Support Chat Interface, where super admins can communicate with users through real-time chat*</small>
+
 **Features**:
 - **Instant Messaging**: Real-time message delivery
 - **Media Sharing**: Image and file sharing in chat
@@ -808,9 +839,10 @@ const useChatSocket = (ticketId) => {
 
 ### 1. Support Ticket Management
 
-![Support Ticket Interface](./screenshots/support-ticket.png)
+![Support Ticket Interface](./screenshots/support-ticket.png) *(Image 7.1)*
 
 <small>*Support Ticket Management Interface, where users can create and manage support requests*</small>
+
 **Features**:
 - **Ticket Creation**: Multi-category ticket submission
 - **File Attachments**: Support document uploads
@@ -827,7 +859,7 @@ const useChatSocket = (ticketId) => {
 
 ### 2. Feedback System
 
-![Feedback Interface](./screenshots/feedback.png)
+![Feedback Interface](./screenshots/feedback.png) *(Image 7.2)*
 
 <small>*Feedback Collection Interface, where users can provide feedback and rate their experience*</small>
 **Types**:
@@ -871,6 +903,10 @@ const useChatSocket = (ticketId) => {
 ### 3. Session Management & Analytics
 **Technology**: Custom session tracking with analytics
 **Purpose**: Comprehensive session monitoring and reporting
+
+![Session Analytics Dashboard](./screenshots/session-analytics.png) *(Image 8.1)*
+
+<small>*Session Analytics Dashboard, showing total sessions, total minutes, average duration, active users, and sessions per officer with a custom date range*</small>
 
 **Features**:
 - **Session Duration**: Track call length and engagement
@@ -1018,7 +1054,7 @@ const useChatSocket = (ticketId) => {
 
 ### 1. D&M AI Chat Interface
 
-![D&M AI Chat Interface](./screenshots/chat-karla.png)
+![D&M AI Chat Interface](./screenshots/chat-karla.png) *(Image 9.1)*
 
 <small>*AI Chat Interface (Karla), where users can chat with an AI assistant specialized in damp and mould analysis*</small>
 **Purpose**: AI-powered customer support
