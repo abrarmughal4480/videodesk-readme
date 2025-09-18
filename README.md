@@ -64,6 +64,10 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard/companyadmin`
 **Purpose**: Manage and oversee users and operations within their specific company
 
+![Company Admin Dashboard](./screenshots/company-dashboard.png)
+
+<small>*Company Admin Dashboard Interface, showing comprehensive metrics, session analytics, storage usage, and user management capabilities*</small>
+
 **Capabilities**:
 - Manage users within their company
 - View company-specific analytics
@@ -111,12 +115,24 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 **Dashboard**: `/dashboard`
 **Purpose**: Property residents who need to upload content, generate access codes, and participate in video sessions with landlords
 
+![Resident Dashboard](./screenshots/resident.png)
+
+<small>*Resident Dashboard Interface, where residents can view their share code uploads, manage content, and track visitor statistics*</small>
+
 **Capabilities**:
 - **File Upload**: Upload property images and videos
 - **AI Analyser Access**: Use damp and mould analyser
-- **Access Code Generation**: Create access codes for their uploads
+- **Share Code Generation**: Create access codes for their uploads
 - **Video Communication**: Participate in video calls with landlords
 - **Content Sharing**: Share content via generated access codes
+
+**New Share Code Process**:
+- **Upload Creation**: Click "+ New Share Code" button to create new uploads
+- **File Selection**: Upload property images and videos (max 6 images, 2 videos)
+- **Share Code Generation**: System automatically generates unique 4-digit share code
+- **Code Sharing**: Receive share code to provide to landlords
+- **Landlord Access**: Landlords can use the share code to view uploaded content
+- **Visitor Tracking**: Monitor who has accessed the shared content
 
 ### Access Code System
 
@@ -213,6 +229,10 @@ const draw = (e) => {
 - Visual communication during video calls
 
 ### 2. Real-time Notifications System
+
+![Real-time Notifications](./screenshots/notification.png)
+
+<small>*Real-time Notifications Interface, showing success notification when landlord accesses shared content with share code and timestamp*</small>
 
 **Location**: Accessible via notification bell icon in the top navigation bar of resident dashboard
 
@@ -395,7 +415,9 @@ const handleCameraTorch = async (enabled) => {
 ![Pointer Tracking Interface](./screenshots/video-calling.png)
 
 <small>*Video Calling Interface with Pointer Tracking, where landlords can guide residents during property inspections*</small>
+
 **Technology**: WebSocket + Canvas API
+
 **Purpose**: Enhanced remote support and collaboration
 
 **Features**:
