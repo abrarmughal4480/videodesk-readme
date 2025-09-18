@@ -128,7 +128,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 
 ![Dashboard Action Button Dropdown](./screenshots/action-dropdown.png) *(Image 1.3b)*
 
-<small>*Dashboard Action Button Dropdown, showing various administrative and user-specific actions including Logout, Dashboard, Support Tickets, Password Reset, and more*</small>
+<small>*Dashboard 'Actions' Button Dropdown, showing various administrative and user-specific actions including 'Logout', 'Dashboard', 'Support Tickets', 'Password Reset', and more*</small>
 
 ### 4. Resident
 **Access Level**: Basic user access
