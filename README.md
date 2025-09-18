@@ -599,7 +599,7 @@ const startScreenShare = async () => {
 - **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
 - **Logged In**: Header profile icon → dropdown menu
 
-**Demo Code Required**: Demo code is required to access AI analyser features (see [Image 4.2](#demo-code-system) for demo code interface)
+**Demo Code Required**: Demo code is required to access AI analyser features (see [Image 4.2](#5-demo-code-system) for demo code interface)
 
 ![Landing Page Profile Dropdown](./screenshots/landing-page-profile-dropdown.png) *(Image 4.1a)*
 
@@ -1116,7 +1116,7 @@ const useChatSocket = (ticketId) => {
 - **Not Logged In**: Landing page header - hamburger icon (3 bars) → dropdown menu
 - **Logged In**: Header profile icon → dropdown menu
 
-**Demo Code Required**: Demo code is required to access AI chat bot (see [Image 4.2](#demo-code-system) for demo code interface)
+**Demo Code Required**: Demo code is required to access AI chat bot (see [Image 4.2](#5-demo-code-system) for demo code interface)
 
 **Purpose**: AI-powered customer support
 **Features**:
@@ -1154,7 +1154,7 @@ VideoDesk uses a usage-based storage pricing model with detailed analytics:
 </div>
 
 ### Storage Cost Monitoring
-**Location**: Super Admin Dashboard → User Management tab → Storage and Cost column (see [Image 1.1](#super-admin-dashboard))
+**Location**: Super Admin Dashboard → User Management tab → Storage and Cost column (see [Image 1.1](#1-super-admin))
 
 **Features**:
 - **Real-time Usage Tracking**: Monitor current storage consumption
