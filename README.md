@@ -154,7 +154,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 - **Landlord Access**: Landlords can use the share code to view uploaded content
 - **Visitor Tracking**: Monitor who has accessed the shared content
 
-### Access Code System
+### Access 'Share Code' System
 
 ![Access Code Interface](./screenshots/image.png) *(Image 1.5)*
 
