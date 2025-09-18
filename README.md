@@ -1136,6 +1136,46 @@ const useChatSocket = (ticketId) => {
 - **Search Functionality**: Message search and filtering
 
 
+## Storage Costs & Pricing
+
+### Storage Cost Structure
+VideoDesk uses a usage-based storage pricing model with detailed analytics:
+
+<div style="overflow-x: auto;">
+
+| User Type | Storage Used (GB) | Cost per GB (£) | S3 Storage Cost (£) | Approx. Photos (Month) | Approx. Videos (Month) | Photos per Workday | Videos per Workday | Figures Period |
+|-----------|------------------|-----------------|-------------------|----------------------|----------------------|-------------------|------------------|----------------|
+| **Low** | 5 | 0.023 | 0.115 | 2,560 | 51 | 128 | 2 | Per Month |
+| **Average** | 50 | 0.023 | 1.15 | 25,600 | 512 | 1,280 | 25 | Per Month |
+| **Moderate** | 200 | 0.023 | 4.6 | 102,400 | 2,048 | 5,120 | 102 | Per Month |
+| **High** | 1,000 | 0.023 | 23.0 | 512,000 | 10,240 | 25,600 | 512 | Per Month |
+| **Average (All Users)** | - | 0.023 | 7.22 | - | - | - | - | Per Month |
+
+</div>
+
+### Storage Cost Monitoring
+**Location**: Super Admin Dashboard → User Management tab → Storage and Cost column (see [Image 1.1](#super-admin-dashboard))
+
+**Features**:
+- **Real-time Usage Tracking**: Monitor current storage consumption
+- **Cost Projections**: Estimate monthly storage costs
+- **Historical Data**: Track storage growth over time
+- **Company-wise Breakdown**: Storage costs per company
+- **File Type Analysis**: Storage usage by file type (images, videos)
+
+**Storage Cost Display**:
+- Current storage usage in GB
+- Monthly cost calculation
+- Projected costs based on usage trends
+- Storage efficiency metrics
+- Cost optimization recommendations
+
+### Storage Management
+- **Automatic Cleanup**: Remove old temporary files
+- **Compression**: Optimize file sizes to reduce storage costs
+- **Retention Policies**: Configurable file retention periods
+- **Archive Options**: Move old files to cheaper storage tiers
+
 ---
 
 *This documentation provides a comprehensive overview of the VideoDesk platform's features, capabilities, and technical implementation. For specific implementation details or troubleshooting, refer to the individual component documentation or contact the development team.*
