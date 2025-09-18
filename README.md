@@ -390,10 +390,9 @@ const handleCameraTorch = async (enabled) => {
 
 **Training Video**: 
 
-<video width="100%" controls>
-  <source src="https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view" type="video/mp4">
-  Your browser does not support the video tag. [Watch the training video here](https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view)
-</video>
+<iframe width="100%" height="400" src="https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/preview" allow="autoplay"></iframe>
+
+[Direct Link to Video](https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view)
 
 ### 6. Real-time Pointer Tracking
 
