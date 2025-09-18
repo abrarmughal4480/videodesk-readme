@@ -94,15 +94,17 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 
   <small>*Video Link Generation Interface, where landlords create session links for residents to join video calls*</small>
 - **Video Communication**: Conduct video sessions with residents
-- **Room Admin Control**: Full admin control in video rooms (pointer events, screen sharing)
+- **Room Control**: Full landlord control in video rooms (pointer events, screen sharing)
 - **Recording & Screenshots**: Take video recordings and screenshots during sessions
 - **Session Sharing**: Share completed sessions with others
 - **Print Functionality**: Print session reports and documentation
 - **Access Tracking**: View who has accessed sessions and when
-- **Message Management**: Amend and manage messages
-- **Team Collaboration**: Invite co-workers to sessions
-- **Profile Management**: Set profile images and company logos
+- **Message Management**: Amend and manage messages *(Access via dashboard action button dropdown)*
+- **Team Collaboration**: Invite co-workers to sessions *(Access via dashboard action button dropdown)*
+- **Profile Management**: Set profile images and company logos *(Access via dashboard action button dropdown)*
 - **Property Inspections**: Create and manage property inspections
+
+**Dashboard Action Button**: Located in the top right corner of the dashboard, this action button opens a dropdown menu providing quick access to the above features. Users should look for this button to access Message Management, Team Collaboration, and Profile Management tools.
 
 ### 4. Resident
 **Access Level**: Basic user access
@@ -113,7 +115,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 - **File Upload**: Upload property images and videos
 - **AI Analyser Access**: Use damp and mould analyser
 - **Access Code Generation**: Create access codes for their uploads
-- **Video Communication**: Participate in video calls with landlords/admins
+- **Video Communication**: Participate in video calls with landlords
 - **Content Sharing**: Share content via generated access codes
 
 ### Access Code System
@@ -121,6 +123,8 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 ![Access Code Interface](./screenshots/image.png)
 
 <small>*Access 'Share Code', where landlord enter the share code provided from the resident and also put his details to access the shared uploads.*</small>
+
+**Location**: Landing page bottom right corner - blue button
 
 **Features**:
 - **Unique Code Generation**: Automatic access code creation
@@ -136,8 +140,11 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 ![Drawing Canvas Tools](./screenshots/drawing-canvas.png)
 
 <small>*Drawing and Annotation Tools Interface, where users can draw, highlight, and annotate during video calls*</small>
-**Location**: Available in video calling interface during live sessions
+
+**Location**: Available in video calling interface during live sessions - specifically when screenshot is in maximized state
+
 **Technology**: HTML5 Canvas API
+
 **Purpose**: Enhanced collaboration and property inspection documentation
 
 **Features**:
@@ -207,9 +214,11 @@ const draw = (e) => {
 
 ### 2. Real-time Notifications System
 
-**Location**: Accessible via notification bell icon in the top navigation bar
+**Location**: Accessible via notification bell icon in the top navigation bar of resident dashboard
+
 **Technology**: Socket.IO WebSocket connections
-**Purpose**: Instant user engagement and activity tracking
+
+**Purpose**: Real-time notifications for residents when their shared content is accessed by landlords, providing instant feedback on content engagement and access tracking
 
 **Features**:
 - **Real-time Alerts**: Instant notification delivery
@@ -253,28 +262,24 @@ const useNotifications = (userEmail) => {
 };
 ```
 
-**Notification Types**:
-- Share code access notifications
-- System alerts and updates
-- Support ticket updates
-- Meeting reminders
-- File upload confirmations
 
 ### 3. Camera Controls & Mobile Features
 
 ![Mobile Video Interface](./screenshots/video-screen.png)
 
 <small>*Mobile Video Interface with Camera Controls, showing live video call with zoom, flash, and recording controls*</small>
+
 **Location**: Available in video calling interface during live sessions
+
 **Technology**: WebRTC MediaDevices API
+
 **Purpose**: Enhanced mobile video experience and remote camera control
 
 **Features**:
-- 📱 **Remote Camera Control**: Landlords can control resident's camera
-- 🔍 **Zoom Controls**: Digital zoom in/out functionality
-- 💡 **Torch Control**: Flash/torch toggle for mobile devices
-- 🎯 **Pan & Focus**: Camera positioning controls
-- 📱 **Mobile Optimization**: Touch-optimized controls
+- **Remote Camera Control**: Landlords can control resident's camera
+- **Zoom Controls**: Digital zoom in/out functionality (ZoomIn, ZoomOut icons)
+- **Torch Control**: Flash/torch toggle for mobile devices
+- **Mobile Optimization**: Touch-optimized controls
 - **Device Detection**: Automatic mobile/desktop feature detection
 - **Permission Management**: Automatic camera permission handling
 
@@ -324,9 +329,16 @@ const handleCameraTorch = async (enabled) => {
 - **Pan Controls**: Camera positioning
 - **Reset Function**: Return to default settings
 
-### 4. Special Notes & Feedback Collection
+### 4. Special Notes 
+
+![Special Notes Interface](./screenshots/special-notes.png)
+
+<small>*Special Notes Modal Interface, where users can set communication preferences, access instructions, repair requests, and safety alerts for property visits*</small>
+
 **Location**: Available in video calling interface and property upload forms
+
 **Technology**: Structured form system with JSON storage
+
 **Purpose**: Comprehensive property inspection documentation
 
 **Features**:
@@ -346,8 +358,19 @@ const handleCameraTorch = async (enabled) => {
 - **Repair Requirements**: Work completion specifications
 
 ### 5. Demo Meeting & Callback System
-**Location**: Available on the main website homepage and contact pages
+
+![Demo Meeting Modal](./screenshots/demo-meeting.png)
+
+<small>*Demo Meeting Booking Modal, where users can schedule product demonstrations with date and time selection*</small>
+
+![Callback Request Modal](./screenshots/call-back.png)
+
+<small>*Callback Request Modal, where users can request phone callbacks with preferred time and contact details*</small>
+
+**Location**: Landing page footer - purple color buttons
+
 **Technology**: Form-based request system with backend processing
+
 **Purpose**: Lead generation and customer engagement
 
 **Features**:
@@ -455,6 +478,9 @@ const startScreenShare = async () => {
 ![Observer Mode Interface](./screenshots/observing.png)
 
 <small>*Observer Mode Interface, where third-party users can watch video calls without participating*</small>
+
+**Location**: Company Admin Panel → User Management → Action buttons (Monitor icon) for users currently in video rooms
+
 **Purpose**: Third-party observation of video calls
 **Features**:
 - **Read-Only Access**: Observers cannot control the call
@@ -469,6 +495,39 @@ const startScreenShare = async () => {
 - **Cloud Storage**: Automatic upload to S3-compatible storage
 - **Duplicate Prevention**: Hash-based duplicate detection
 - **Progress Tracking**: Real-time upload progress
+
+### 5. Resend Video Link Feature
+
+![Resend Button](./screenshots/resend-button.png)
+
+<small>*Resend Video Link Button, showing the orange resend button with timer in the bottom right corner of the video screen*</small>
+
+![Resend Popup](./screenshots/resend-popup.png)
+
+<small>*Resend Video Link Popup, where users can edit contact details and resend video links with a 10-minute timer*</small>
+
+**Location**: Right bottom corner of video screen (remains visible even when video screen is closed)
+
+**Technology**: Drag and drop functionality with 2-second hold activation
+
+**Purpose**: Allow users to resend video links when delivery fails or contact details are incorrect
+
+**Features**:
+- **Drag & Drop Activation**: Hold button for 2 seconds to activate drag functionality
+- **Persistent Visibility**: Button remains visible even when video screen is closed
+- **10-Minute Timer**: Button automatically hides after 10 minutes
+- **Contact Editing**: Edit email and contact number details before resending
+- **Email Correction**: Modify email address if incorrectly entered
+- **Phone Number Update**: Change contact number if needed
+- **Multiple Actions**: Resend link, copy room link, or re-open video room
+- **Auto-Close Timer**: Popup automatically closes with countdown display
+- **Quick Resend**: One-click resend with same contact details
+
+**Use Cases**:
+- Resend video link when email delivery fails
+- Correct incorrect contact information
+- Provide alternative access methods
+- Emergency link sharing during active sessions
 
 ## AI-Powered Damp & Mould Analyser
 
@@ -957,13 +1016,6 @@ const useChatSocket = (ticketId) => {
 - **Status Tracking**: Message read/unread status
 - **Search Functionality**: Message search and filtering
 
-### 3. Message Types
-**Supported Content**:
-- **Text Messages**: Rich text formatting
-- **Image Messages**: Automatic image optimization
-- **File Attachments**: Document sharing
-- **System Messages**: Automated notifications
-- **Status Updates**: Connection and delivery status
 
 ---
 
