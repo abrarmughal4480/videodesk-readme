@@ -12,7 +12,6 @@
 - **2.2 Company Admin** - Company-specific management and analytics
 - **2.3 Landlord** - Property management and video session control
 - **2.4 Resident** - Content upload and video participation
-- **2.5 Access 'Share Code' System** - Secure content sharing mechanism
 
 ### **3. Core Features** *(6 Main Features)*
 - **3.1 Advanced Drawing & Annotation Tools** - Real-time drawing and highlighting
