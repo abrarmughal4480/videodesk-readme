@@ -1,17 +1,128 @@
 # VideoDesk - Comprehensive Features Documentation
 
 ## Table of Contents
-1. [Overview](#overview)
-2. [User Roles & Permissions](#user-roles--permissions)
-3. [Core Features](#core-features)
-4. [WebRTC Video Communication](#webrtc-video-communication)
-5. [AI-Powered Damp & Mould Analyser](#ai-powered-damp--mould-analyser)
-6. [Dashboard Features](#dashboard-features)
-7. [File Upload & Sharing](#file-upload--sharing)
-8. [Chat & Messaging System](#chat--messaging-system)
-9. [Support & Feedback System](#support--feedback-system)
-10. [Advanced Features](#advanced-features)
-11. [Technical Architecture](#technical-architecture)
+
+### **1. Overview**
+- Platform introduction and key capabilities
+- Real-time video collaboration features
+- AI-powered analysis tools
+
+### **2. User Roles & Permissions** *(4 User Types)*
+- **2.1 Super Admin** - System-wide administration and oversight
+- **2.2 Company Admin** - Company-specific management and analytics
+- **2.3 Landlord** - Property management and video session control
+- **2.4 Resident** - Content upload and video participation
+- **2.5 Access 'Share Code' System** - Secure content sharing mechanism
+
+### **3. Core Features** *(6 Main Features)*
+- **3.1 Advanced Drawing & Annotation Tools** - Real-time drawing and highlighting
+- **3.2 Real-time Notifications System** - Instant alerts and updates
+- **3.3 Camera Controls & Mobile Features** - Device-specific optimizations
+- **3.4 Special Notes** - Contextual information sharing
+- **3.5 Demo Meeting & Callback System** - Meeting scheduling and management
+- **3.6 Real-time Pointer Tracking** - Collaborative cursor sharing
+
+### **4. WebRTC Video Communication** *(4 Communication Features)*
+- **4.1 Video Calling** - High-quality video communication
+- **4.2 Screen Sharing & Observer Mode** - Content sharing and monitoring
+- **4.3 Recording & Screenshots** - Session capture and documentation
+- **4.4 Resend Video Link Feature** - Link regeneration and sharing
+
+### **5. AI-Powered Damp & Mould Analyser** *(5 AI Components)*
+- **5.1 Image Analysis Engine** - AI-powered image processing
+- **5.2 Severity Classification** - Automated risk assessment
+- **5.3 Detailed Analysis Output** - Comprehensive reporting
+- **5.4 UK-Specific Features** - Localized analysis capabilities
+- **5.5 Demo Code System** - Access control for AI features
+
+### **6. Dashboard Features** *(3 Dashboard Types)*
+- **6.1 Super Admin Dashboard** - System-wide management interface
+- **6.2 Company Admin Dashboard** - Company-specific analytics and controls
+- **6.3 Standard Dashboard** - General user interface
+
+### **7. File Upload & Sharing** *(4 Upload Features)*
+- **7.1 Multi-Media Upload System** - File upload capabilities
+- **7.2 Upload Process** - Step-by-step upload workflow
+- **7.3 Access Code Features** - Secure file sharing
+- **7.4 File Management** - Content organization and control
+
+### **8. Chat & Messaging System** *(1 Communication Feature)*
+- **8.1 Real-Time Chat** - Instant messaging and media sharing
+
+### **9. Support & Feedback System** *(3 Support Features)*
+- **9.1 Support Ticket Management** - Issue tracking and resolution
+- **9.2 Feedback System** - User feedback collection
+- **9.3 Notification System** - Alert and update management
+
+### **10. Advanced Features** *(5 Advanced Capabilities)*
+- **10.1 Global Socket Tracking** - Real-time connection monitoring
+- **10.2 Mobile Device Optimization** - Mobile-specific enhancements
+- **10.3 Session Management & Analytics** - Usage tracking and reporting
+- **10.4 Security & Privacy Features** - Data protection and access control
+- **10.5 Integration Capabilities** - Third-party system integration
+
+### **11. Technical Architecture** *(5 Technical Components)*
+- **11.1 Frontend Technology Stack** - Client-side technologies
+- **11.2 Backend Technology Stack** - Server-side technologies
+- **11.3 Key Dependencies** - Essential libraries and frameworks
+- **11.4 Security Features** - Security implementations
+- **11.5 Performance Optimizations** - Speed and efficiency improvements
+
+### **12. API Endpoints** *(5 API Categories)*
+- **12.1 Authentication** - User login and session management
+- **12.2 WebRTC** - Video communication APIs
+- **12.3 File Upload** - File handling endpoints
+- **12.4 AI Analyser** - AI analysis APIs
+- **12.5 Support** - Support system APIs
+
+### **13. Deployment & Configuration** *(2 Deployment Areas)*
+- **13.1 Environment Variables** - Configuration settings
+- **13.2 Production Considerations** - Production deployment guidelines
+
+### **14. Future Development** *(2 Development Areas)*
+- **14.1 Planned Features** - Upcoming functionality
+- **14.2 Scalability Improvements** - Performance enhancements
+
+### **15. AI Chat Bot Integration** *(2 AI Chat Features)*
+- **15.1 D&M AI Chat Interface** - Specialized damp and mould chat
+- **15.2 Admin Chat Screen** - Administrative chat management
+
+### **16. Storage Costs & Pricing** *(1 Cost Management Feature)*
+- **16.1 Storage Cost Monitoring** - Usage tracking and cost management
+
+---
+
+## Quick Reference Guide
+
+### **🚀 Getting Started**
+- **New Users**: Start with [User Roles & Permissions](#user-roles--permissions) to understand access levels
+- **Property Managers**: Focus on [Landlord Features](#3-landlord) and [Video Communication](#webrtc-video-communication)
+- **Residents**: Check [Resident Features](#4-resident) and [File Upload & Sharing](#file-upload--sharing)
+- **System Admins**: Review [Super Admin Features](#1-super-admin) and [Technical Architecture](#technical-architecture)
+
+### **📱 Key Features by User Type**
+| **Super Admin** | **Company Admin** | **Landlord** | **Resident** |
+|-----------------|-------------------|--------------|--------------|
+| System Management | Company Analytics | Video Sessions | File Uploads |
+| User Management | User Oversight | Property Inspections | Share Codes |
+| Support Tickets | Storage Monitoring | Recording/Screenshots | AI Analysis |
+| AI Access (All) | Session Analytics | Drawing Tools | Video Participation |
+
+### **🔧 Technical Quick Links**
+- **API Documentation**: [API Endpoints](#api-endpoints)
+- **Security Features**: [Security & Privacy](#4-security--privacy-features)
+- **Deployment**: [Environment Variables](#1-environment-variables)
+- **Performance**: [Performance Optimizations](#5-performance-optimizations)
+
+### **📊 Feature Count Summary**
+- **Total Sections**: 16 main categories
+- **User Roles**: 4 distinct access levels
+- **Core Features**: 6 main capabilities
+- **Communication Tools**: 4 video/chat features
+- **AI Components**: 5 analysis features
+- **Dashboard Types**: 3 different interfaces
+
+---
 
 ## Overview
 
