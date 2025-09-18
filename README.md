@@ -142,7 +142,7 @@ VideoDesk is a comprehensive real-time video collaboration platform designed for
 - Demo meeting and callback request system
 - AI-powered damp and mould detection
 
-## User Roles & Permissions
+## 2. User Roles & Permission
 
 VideoDesk has **4 distinct user roles**, each with specific access levels and capabilities:
 
@@ -160,7 +160,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 
 ---
 
-### 1. Super Admin
+### 2.1 Super Admin
 **Access Level**: Full system access
 **Dashboard**: `/dashboard/superadmin`
 **Purpose**: System-wide administration and oversight of the entire VideoDesk platform
@@ -186,7 +186,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 - Analyser History Section
 - System Overview with real-time statistics
 
-### 2. Company Admin
+### 2.2 Company Admin
 **Access Level**: Company-specific management
 **Dashboard**: `/dashboard/companyadmin`
 **Purpose**: Manage and oversee users and operations within their specific company
@@ -210,7 +210,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 - Storage Usage Monitoring
 - Activity History
 
-### 3. Landlord
+### 2.3 Landlord
 **Access Level**: Property management focused
 **Dashboard**: `/dashboard`
 
@@ -241,7 +241,7 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 
 <small>*Dashboard 'Actions' Button Dropdown, showing various administrative and user-specific actions including 'Logout', 'Dashboard', 'Support Tickets', 'Password Reset', and more*</small>
 
-### 4. Resident
+### 2.4 Resident
 **Access Level**: Basic user access
 **Dashboard**: `/dashboard`
 **Purpose**: Property residents who need to upload content, generate access codes, and participate in video sessions with landlords
@@ -282,9 +282,9 @@ VideoDesk has **4 distinct user roles**, each with specific access levels and ca
 - **Secure Sharing**: Codes can be shared via URL parameters
 - **Content Association**: Codes linked to specific uploads or rooms
 
-## Core Features
+## 3. Core Features
 
-### 1. Advanced Drawing & Annotation Tools
+### 3.1 Advanced Drawing & Annotation Tools
 
 ![Drawing Canvas Tools](./screenshots/drawing-canvas.png) *(Image 2.1)*
 
@@ -361,7 +361,7 @@ const draw = (e) => {
 - Repair instruction annotation
 - Visual communication during video calls
 
-### 2. Real-time Notifications System
+### 3.2 Real-time Notifications System
 
 ![Real-time Notifications](./screenshots/notification.png) *(Image 2.2)*
 
@@ -416,7 +416,7 @@ const useNotifications = (userEmail) => {
 ```
 
 
-### 3. Camera Controls & Mobile Features
+### 3.3 Camera Controls & Mobile Features
 
 ![Mobile Video Interface](./screenshots/video-screen.png) *(Image 2.3)*
 
@@ -482,7 +482,7 @@ const handleCameraTorch = async (enabled) => {
 - **Pan Controls**: Camera positioning
 - **Reset Function**: Return to default settings
 
-### 4. Special Notes 
+### 3.4 Special Notes 
 
 ![Special Notes Interface](./screenshots/special-notes.png) *(Image 2.4)*
 
@@ -510,7 +510,7 @@ const handleCameraTorch = async (enabled) => {
 - **Vulnerability Information**: Household vulnerability tracking
 - **Repair Requirements**: Work completion specifications
 
-### 5. Demo Meeting & Callback System
+### 3.5 Demo Meeting & Callback System
 
 ![Demo Meeting Modal](./screenshots/demo-meeting.png) *(Image 2.5)*
 
@@ -543,7 +543,7 @@ const handleCameraTorch = async (enabled) => {
 
 **Training Video**: [Watch the training video for this feature](https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view)
 
-### 6. Real-time Pointer Tracking
+### 3.6 Real-time Pointer Tracking
 
 ![Pointer Tracking Interface](./screenshots/video-calling.png) *(Image 2.7)*
 
@@ -573,13 +573,13 @@ const handleCameraTorch = async (enabled) => {
 - Training and demonstrations
 - Collaborative property assessments
 
-## WebRTC Video Communication
+## 4. WebRTC Video Communication
 
 ![Video Calling Interface](./screenshots/video-calling.png) *(Image 3.1)*
 
 <small>*Main Video Calling Interface, where real-time video communication and screen sharing takes place*</small>
 
-### 1. Video Calling
+### 4.1 Video Calling
 **Location**: 
 - **Landing Page**: Header (4th section "Launch New Video Link") and header link
 - **Dashboard**: Profile section below - orange button
@@ -626,7 +626,7 @@ const startScreenShare = async () => {
 };
 ```
 
-### 2. Screen Sharing & Observer Mode
+### 4.2 Screen Sharing & Observer Mode
 **Technology**: getDisplayMedia API
 
 ![Screen Sharing & Observer Interface](./screenshots/observing.png) *(Image 3.2)*
@@ -651,7 +651,7 @@ const startScreenShare = async () => {
 - **Meeting Integration**: Link generation for observers
 - **Session Recording**: Optional call recording capabilities
 
-### 3. Recording & Screenshots
+### 4.3 Recording & Screenshots
 
 ![Recording Interface](./screenshots/video-calling.png) *(Image 3.3)*
 
@@ -667,7 +667,7 @@ const startScreenShare = async () => {
 - **Progress Tracking**: Real-time upload progress
 - **Bottom Controls**: Recording controls located at bottom of video interface
 
-### 4. Resend Video Link Feature
+### 4.4 Resend Video Link Feature
 
 ![Resend Button](./screenshots/resend-button.png) *(Image 3.4)*
 
@@ -700,7 +700,7 @@ const startScreenShare = async () => {
 - Provide alternative access methods
 - Emergency link sharing during active sessions
 
-## AI-Powered Damp & Mould Analyser
+## 5. AI-Powered Damp & Mould Analyser
 
 ![AI Damp & Mould Analyser](./screenshots/ai-analyser.png) *(Image 4.1)*
 
@@ -716,7 +716,7 @@ const startScreenShare = async () => {
 
 <small>*Landing Page Profile Dropdown, showing AI Damp and Mould Assistant, AI Image Analyser, and other options*</small>
 
-### 1. Image Analysis Engine
+### 5.1 Image Analysis Engine
 **Technology**: OpenAI GPT-4 Vision API
 **Purpose**: Automated damp and mould detection in property images
 
@@ -772,7 +772,7 @@ const analyzeImage = async (imageFile) => {
 };
 ```
 
-### 2. Severity Classification
+### 5.2 Severity Classification
 **Severity Levels**:
 1. **No mould or damp**: Clean, healthy surfaces
 2. **Light mould/damp**: Minor, early-stage issues
@@ -780,7 +780,7 @@ const analyzeImage = async (imageFile) => {
 4. **Severe mould/damp**: Extensive, serious damage
 5. **Critical mould/damp**: Dangerous, structural issues
 
-### 3. Detailed Analysis Output
+### 5.3 Detailed Analysis Output
 **Location Identification**:
 - **Precise Positioning**: Exact location specification (upper wall, near ceiling, etc.)
 - **Material Assessment**: Surface type and damage evaluation
@@ -794,14 +794,14 @@ const analyzeImage = async (imageFile) => {
 - Window Panes, Mirror Surfaces
 - Bathroom/Kitchen Surfaces
 
-### 4. UK-Specific Features
+### 5.4 UK-Specific Features
 **Localization**:
 - **UK English Terminology**: Mould, plaster, skirting board, loft, radiator
 - **Building Standards**: UK property inspection standards
 - **Postcode Integration**: Location-based analysis
 - **Regulatory Compliance**: UK housing regulations
 
-### 5. Demo Code System
+### 5.5 Demo Code System
 
 ![Demo Code Interface](./screenshots/demo-code.png) *(Image 4.2)*
 
@@ -812,9 +812,9 @@ const analyzeImage = async (imageFile) => {
 - **Usage Tracking**: Analytics and monitoring
 - **Feature Gating**: Controlled feature access
 
-## Dashboard Features
+## 6. Dashboard Features
 
-### 1. Super Admin Dashboard
+### 6.1 Super Admin Dashboard
 **Location**: `/dashboard/superadmin`
 
 **Sections**:
@@ -831,7 +831,7 @@ const analyzeImage = async (imageFile) => {
 - Feature usage statistics
 - Revenue and subscription metrics
 
-### 2. Company Admin Dashboard
+### 6.2 Company Admin Dashboard
 **Location**: `/dashboard/companyadmin`
 
 **Sections**:
@@ -842,7 +842,7 @@ const analyzeImage = async (imageFile) => {
 - **Activity History**: User activity tracking
 - **Company Profile**: Company settings and information
 
-### 3. Standard Dashboard
+### 6.3 Landlord Dashboard
 **Location**: `/dashboard`
 
 **Features**:
@@ -851,7 +851,22 @@ const analyzeImage = async (imageFile) => {
 - **Quick Actions**: Fast access to common features
 - **Notifications**: System and support notifications
 
-## File Upload & Sharing
+### 6.4 Resident Dashboard
+**Location**: `/dashboard`
+
+![Resident Dashboard](./screenshots/resident.png) *(Image 6.4)*
+
+<small>*Resident Dashboard Interface, where residents can view their share code uploads, manage content, and track visitor statistics*</small>
+
+**Features**:
+- **File Upload**: Upload property images and videos
+- **AI Analyser Access**: Use damp and mould analyser
+- **Share Code Generation**: Create access codes for uploads
+- **Video Communication**: Participate in video calls with landlords
+- **Content Sharing**: Share content via generated access codes
+- **Visitor Tracking**: Monitor who has accessed shared content
+
+## 7. File Upload & Sharing
 
 ![File Upload Interface](./screenshots/file-upload.png) *(Image 5.1)*
 
@@ -861,7 +876,7 @@ const analyzeImage = async (imageFile) => {
 - **Resident Dashboard**: Header top right corner - orange button (right of bell icon)
 - **Landing Page**: Footer bottom right - first orange button
 
-### 1. Multi-Media Upload System
+### 7.1 Multi-Media Upload System
 **Supported Formats**:
 - **Images**: JPEG, PNG, WebP (max 6 images)
 - **Videos**: MP4, WebM, MOV (max 2 videos, 15 seconds each)
@@ -892,7 +907,7 @@ const fileToBase64 = (file) => {
 };
 ```
 
-### 2. Upload Process
+### 7.2 Upload Process
 **Steps**:
 1. **Form Completion**: User details and property information
 2. **File Selection**: Multi-file selection with validation
@@ -901,14 +916,14 @@ const fileToBase64 = (file) => {
 5. **Progressive Upload**: Sequential file upload with progress tracking
 6. **Access Code Generation**: Unique code for content sharing
 
-### 3. Access Code Features
+### 7.3 Access Code Features
 **Functionality**:
 - **URL Parameters**: Automatic code population from URLs
 - **Time-Limited Access**: 15-minute timeout for guests
 - **Role-Based Permissions**: Different access levels
 - **Content Association**: Direct linking to specific uploads
 
-### 4. File Management
+### 7.4 File Management
 **Features**:
 - **Cloud Storage**: S3-compatible storage integration
 - **Metadata Tracking**: File information and associations
@@ -916,9 +931,9 @@ const fileToBase64 = (file) => {
 - **Progress Monitoring**: Real-time upload progress
 - **Error Handling**: Comprehensive error management
 
-## Chat & Messaging System
+## 8. Chat & Messaging System
 
-### 1. Real-Time Chat
+### 8.1 Real-Time Chat Features
 **Technology**: Socket.IO WebSocket connections
 
 **Real-time Chat Access Locations**:
@@ -984,9 +999,9 @@ const useChatSocket = (ticketId) => {
 };
 ```
 
-## Support & Feedback System
+## 9. Support & Feedback System
 
-### 1. Support Ticket Management
+### 9.1 Support Ticket Management
 
 ![Support Ticket Interface](./screenshots/support-ticket.png) *(Image 7.1)*
 
@@ -1010,7 +1025,7 @@ const useChatSocket = (ticketId) => {
 - Billing Inquiries
 - General Support
 
-### 2. Feedback System
+### 9.2 Feedback System
 
 ![Feedback Interface](./screenshots/feedback.png) *(Image 7.2)*
 
@@ -1026,16 +1041,16 @@ const useChatSocket = (ticketId) => {
 - **General Feedback**: Overall platform feedback
 - **Bug Reports**: Issue reporting and tracking
 
-### 3. Notification System
+### 9.3 Notification System
 **Channels**:
 - **In-App Notifications**: Real-time platform notifications
 - **Email Notifications**: Email alerts and updates
 - **Push Notifications**: Mobile push notifications
 - **System Alerts**: Critical system notifications
 
-## Advanced Features
+## 10. Advanced Features
 
-### 1. Global Socket Tracking
+### 10.1 Global Socket Tracking
 **Technology**: Socket.IO with connection management
 **Purpose**: System-wide real-time communication monitoring
 
@@ -1046,7 +1061,7 @@ const useChatSocket = (ticketId) => {
 - **Connection Health**: Monitor connection quality and stability
 - **Error Handling**: Comprehensive connection error management
 
-### 2. Mobile Device Optimization
+### 10.2 Mobile Device Optimization
 **Technology**: Responsive design with touch optimization
 **Purpose**: Enhanced mobile user experience
 
@@ -1058,7 +1073,7 @@ const useChatSocket = (ticketId) => {
 - **Mobile Notifications**: Push notification support
 - **Offline Capabilities**: Limited offline functionality
 
-### 3. Session Management & Analytics
+### 10.3 Session Management & Analytics
 **Technology**: Custom session tracking with analytics
 **Purpose**: Comprehensive session monitoring and reporting
 
@@ -1076,7 +1091,7 @@ const useChatSocket = (ticketId) => {
 - **Error Logging**: Comprehensive error tracking and reporting
 - **Session Recording**: Optional session recording capabilities
 
-### 4. Security & Privacy Features
+### 10.4 Security & Privacy Features
 **Technology**: JWT authentication with data encryption
 **Purpose**: Secure data handling and user privacy protection
 
@@ -1093,7 +1108,7 @@ const useChatSocket = (ticketId) => {
 - **Data Privacy**: GDPR-compliant data handling
 - **Audit Logging**: Comprehensive activity logging
 
-### 5. Integration Capabilities
+### 10.5 Integration Capabilities
 **Technology**: RESTful APIs with webhook support
 **Purpose**: Third-party system integration and automation
 
@@ -1105,9 +1120,9 @@ const useChatSocket = (ticketId) => {
 - **Custom Integrations**: Flexible integration options
 - **API Documentation**: Complete API documentation
 
-## Technical Architecture
+## 11. Technical Architecture
 
-### 1. Frontend Technology Stack
+### 11.1 Frontend Technology Stack
 - **Framework**: Next.js 14 with App Router
 - **UI Library**: React with custom components
 - **Styling**: Tailwind CSS
@@ -1115,7 +1130,7 @@ const useChatSocket = (ticketId) => {
 - **Real-time Communication**: Socket.IO client
 - **WebRTC**: Native WebRTC APIs
 
-### 2. Backend Technology Stack
+### 11.2 Backend Technology Stack
 - **Runtime**: Node.js
 - **Framework**: Express.js
 - **Database**: MongoDB with Mongoose ODM
@@ -1123,7 +1138,7 @@ const useChatSocket = (ticketId) => {
 - **File Storage**: S3-compatible storage
 - **AI Integration**: OpenAI API
 
-### 3. Key Dependencies
+### 11.3 Key Dependencies
 **Frontend**:
 - `socket.io-client`: WebSocket communication
 - `lucide-react`: Icon library
@@ -1137,50 +1152,50 @@ const useChatSocket = (ticketId) => {
 - `multer`: File upload handling
 - `openai`: AI integration
 
-### 4. Security Features
+### 11.4 Security Features
 - **Authentication**: JWT-based authentication
 - **Authorization**: Role-based access control
 - **Data Validation**: Input sanitization and validation
 - **File Security**: Secure file upload and storage
 - **API Protection**: Rate limiting and CORS configuration
 
-### 5. Performance Optimizations
+### 11.5 Performance Optimizations
 - **Image Optimization**: Automatic image compression
 - **Lazy Loading**: Component and image lazy loading
 - **Caching**: Browser and server-side caching
 - **Code Splitting**: Dynamic imports and route-based splitting
 - **WebRTC Optimization**: Efficient peer connection management
 
-## API Endpoints
+## 12. API Endpoints
 
-### 1. Authentication
+### 12.1 Authentication
 - `POST /api/v1/auth/login` - User login
 - `POST /api/v1/auth/register` - User registration
 - `POST /api/v1/auth/logout` - User logout
 - `GET /api/v1/auth/me` - Get current user
 
-### 2. WebRTC
+### 12.2 WebRTC
 - `POST /api/v1/webrtc/create-room` - Create video room
 - `GET /api/v1/webrtc/room/:id` - Get room details
 - `DELETE /api/v1/webrtc/room/:id` - Delete room
 
-### 3. File Upload
+### 12.3 File Upload
 - `POST /api/v1/upload/session` - Create upload session
 - `POST /api/v1/upload/file/:sessionId` - Upload file
 - `POST /api/v1/upload/complete/:sessionId` - Complete upload
 
-### 4. AI Analyser
+### 12.4 AI Analyser
 - `POST /api/v1/analyze` - Analyse image for damp/mould
 - `GET /api/v1/analyze/history` - Get analysis history
 
-### 5. Support
+### 12.5 Support
 - `POST /api/v1/support-tickets/create` - Create support ticket
 - `GET /api/v1/support-tickets` - Get user tickets
 - `PUT /api/v1/support-tickets/:id` - Update ticket
 
-## Deployment & Configuration
+## 13. Deployment & Configuration
 
-### 1. Environment Variables
+### 13.1 Environment Variables
 **Frontend**:
 - `NEXT_PUBLIC_BACKEND_URL`: Backend API URL
 - `NEXT_PUBLIC_SOCKET_URL`: WebSocket server URL
@@ -1192,32 +1207,32 @@ const useChatSocket = (ticketId) => {
 - `AWS_ACCESS_KEY_ID`: S3 storage access key
 - `AWS_SECRET_ACCESS_KEY`: S3 storage secret key
 
-### 2. Production Considerations
+### 13.2 Production Considerations
 - **HTTPS Required**: WebRTC requires secure context
 - **STUN/TURN Servers**: Configure for NAT traversal
 - **CDN Integration**: Static asset delivery
 - **Monitoring**: Application performance monitoring
 - **Backup Strategy**: Database and file backup procedures
 
-## Future Enhancements
+## 14. Future Enhancements
 
-### 1. Planned Features
+### 14.1 Planned Features
 - **Mobile App**: Native iOS and Android applications
 - **Advanced Analytics**: Machine learning insights
 - **Integration APIs**: Third-party system integration
 - **Multi-language Support**: Internationalization
 - **Advanced AI**: Enhanced computer vision capabilities
 
-### 2. Scalability Improvements
+### 14.2 Scalability Improvements
 - **Microservices Architecture**: Service decomposition
 - **Load Balancing**: Horizontal scaling
 - **Database Sharding**: Data distribution
 - **Caching Layer**: Redis integration
 - **CDN Optimization**: Global content delivery
 
-## AI Chat Bot Integration
+## 15. AI Chat Bot Integration
 
-### 1. D&M AI Chat Interface
+### 15.1 D&M AI Chat Interface
 
 ![AI Chat Interface](./screenshots/chat-karla.png) *(Image 9.1)*
 
@@ -1237,7 +1252,7 @@ const useChatSocket = (ticketId) => {
 - **Local Storage**: Offline chat history
 - **Backend Sync**: Cloud synchronization for authenticated users
 
-### 2. Admin Chat Screen
+### 15.2 Admin Chat Screen
 **Purpose**: Support ticket communication
 **Features**:
 - **Ticket Integration**: Direct ticket association
@@ -1247,9 +1262,9 @@ const useChatSocket = (ticketId) => {
 - **Search Functionality**: Message search and filtering
 
 
-## Storage Costs & Pricing
+## 16. Storage Costs & Pricing
 
-### Storage Cost Structure
+### 16.1 Storage Cost Structure
 VideoDesk uses a usage-based storage pricing model with detailed analytics:
 
 <div style="overflow-x: auto;">
