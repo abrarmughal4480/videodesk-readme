@@ -388,7 +388,12 @@ const handleCameraTorch = async (enabled) => {
 - **Custom Time Slots**: Flexible appointment times
 - **Message Attachments**: Additional request details
 
-**Training Video**: [Watch the training video for this feature](https://example.com/training-video)
+**Training Video**: 
+
+<video width="100%" controls>
+  <source src="https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view" type="video/mp4">
+  Your browser does not support the video tag. [Watch the training video here](https://drive.google.com/file/d/1UYVX7P5_QDluYAtcxuEi7zvcqJlYCdbT/view)
+</video>
 
 ### 6. Real-time Pointer Tracking
 
