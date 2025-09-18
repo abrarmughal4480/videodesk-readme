@@ -35,10 +35,11 @@
 - **5.4 UK-Specific Features** - Localized analysis capabilities
 - **5.5 Demo Code System** - Access control for AI features
 
-### **6. Dashboard Features** *(3 Dashboard Types)*
+### **6. Dashboard Features** *(4 Dashboard Types)*
 - **6.1 Super Admin Dashboard** - System-wide management interface
 - **6.2 Company Admin Dashboard** - Company-specific analytics and controls
-- **6.3 Standard Dashboard** - General user interface
+- **6.3 Landlord Dashboard** - Property management and video session interface
+- **6.4 Resident Dashboard** - Content upload and share code management interface
 
 ### **7. File Upload & Sharing** *(4 Upload Features)*
 - **7.1 Multi-Media Upload System** - File upload capabilities
@@ -120,7 +121,7 @@
 - **Core Features**: 6 main capabilities
 - **Communication Tools**: 4 video/chat features
 - **AI Components**: 5 analysis features
-- **Dashboard Types**: 3 different interfaces
+- **Dashboard Types**: 4 different interfaces
 
 ---
 
