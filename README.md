@@ -1170,11 +1170,6 @@ VideoDesk uses a usage-based storage pricing model with detailed analytics:
 - Storage efficiency metrics
 - Cost optimization recommendations
 
-### Storage Management
-- **Automatic Cleanup**: Remove old temporary files
-- **Compression**: Optimize file sizes to reduce storage costs
-- **Retention Policies**: Configurable file retention periods
-- **Archive Options**: Move old files to cheaper storage tiers
 
 ---
 
