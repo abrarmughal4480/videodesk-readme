@@ -39,7 +39,9 @@ VideoDesk is a comprehensive platform designed for property management that allo
 ### 1.3 How to Get Started
 
 • **Visit the Website**: Go to the VideoDesk homepage
-<small>*VideoDesk Homepage with two main buttons at footer - orange 'For Residents Share Photos and Videos' button and blue 'Enter Share Code' button*</small>
+
+![VideoDesk Homepage](./resident-images/homepage-buttons.png)
+*VideoDesk Homepage with two main buttons at footer - orange 'For Residents Share Photos and Videos' button and blue 'Enter Share Code' button*
 
 • **Footer Button**: Scroll down to the footer and click the "For Residents Share Photos and Videos" button
 
@@ -56,7 +58,9 @@ VideoDesk is a comprehensive platform designed for property management that allo
 ### 1.4 For Existing Users
 
 • **Login**: Use your existing credentials to login from the home page
-<small>*Login Popup on Homepage, where existing users can enter their credentials to access their account*</small>
+
+![Login Popup](./resident-images/login-popup.png)
+*Login Popup on Homepage, where existing users can enter their credentials to access their account*
 
 • **Pre-filled Form**: If you're already logged in, the upload form will be automatically pre-filled with your account information
 
@@ -69,7 +73,9 @@ VideoDesk is a comprehensive platform designed for property management that allo
 ### 2.1 Step-by-Step Upload Process
 
 • **Starting a New Upload**: Click the "+ New Share Code" button on your dashboard
-<small>*Resident Dashboard showing user profile and orange '+ New Share Code' button in top right corner along with bell notification icon*</small>
+
+![Resident Dashboard](./resident-images/dashboard.png)
+*Resident Dashboard showing user profile and orange '+ New Share Code' button in top right corner along with bell notification icon*
 
 This will take you to the upload page
 
@@ -87,7 +93,8 @@ This will take you to the upload page
 **Optional Fields:**
 - Flat/Apartment/Room (if applicable)
 
-<small>*File Upload Page, where residents fill out property information and upload their images and videos*</small>
+![File Upload Page](./resident-images/upload-page.png)
+*File Upload Page, where residents fill out property information and upload their images and videos*
 
 • **Adding Media Files**:
 
@@ -106,7 +113,8 @@ This will take you to the upload page
 - **How to add**: Click the video upload area and select files
 - **Labeling**: Add descriptive labels for each video
 
-<small>*Image and Video Upload Section on Upload Page, showing specific areas where users can drag and drop or select their media files*</small>
+![Image and Video Upload Section](./resident-images/images-and-videos.png)
+*Image and Video Upload Section on Upload Page, showing specific areas where users can drag and drop or select their media files*
 
 • **Submitting Your Upload**:
   1. **Review**: Check all information is correct
@@ -141,14 +149,17 @@ This will take you to the upload page
 
 **Location**: Available at `/dashboard` after login
 
-<small>*Resident Dashboard Interface, showing all available features and navigation options for residents*</small>
+![Resident Dashboard Interface](./resident-images/dashboard.png)
+*Resident Dashboard Interface, showing all available features and navigation options for residents*
 
 Your dashboard provides access to all resident features:
 
 • **Main Features**:
   - **New Share Code**: Create new uploads and access codes
   - **Notifications**: Real-time alerts when your content is viewed
-    <small>*Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*</small>
+
+    ![Notification Popup](./resident-images/notification-popup.png)
+    *Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*
   - **Recent Activity**: View your latest uploads and activities
   - **Quick Access**: Fast access to all platform features
 
