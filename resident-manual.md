@@ -121,7 +121,7 @@ This will take you to the upload page
 ### 2.2 Access Code Features
 
 ![Share Code](./resident-images/share-code.png)
-*Image 8: Share Code display showing the generated 4-digit access code*
+*Image 6: Share Code display showing the generated 4-digit access code*
 
 - **Unique Generation**: Each upload gets a unique 4-digit code
 - **Secure Sharing**: Only people with the code can access your content
@@ -137,7 +137,7 @@ This will take you to the upload page
 **Location**: Available at `/dashboard` after login
 
 ![Resident Dashboard Interface](./resident-images/dashboard.png)
-*Image 6: Resident Dashboard Interface, showing all available features and navigation options for residents*
+*Image 7: Resident Dashboard Interface, showing all available features and navigation options for residents*
 
 Your dashboard provides access to all resident features:
 
@@ -146,7 +146,7 @@ Your dashboard provides access to all resident features:
   - **Notifications**: Real-time alerts when your content is viewed
 
     ![Notification Popup](./resident-images/notification-popup.png)
-    *Image 7: Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*
+    *Image 8: Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*
   - **Recent Activity**: View your latest uploads and activities
   - **Quick Access**: Fast access to all platform features
 
