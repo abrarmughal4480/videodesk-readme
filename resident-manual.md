@@ -29,7 +29,7 @@
 
 VideoDesk is a comprehensive platform designed for property management that allows residents to:
 
-- Upload property images and videos
+- Upload property image/photo and videos
 - Generate secure access codes for sharing content
 - Access their personal dashboard
 - Manage their property content
@@ -47,7 +47,7 @@ VideoDesk is a comprehensive platform designed for property management that allo
 ![VideoDesk Homepage](./resident-images/homepage-buttons.png)
 *Image 1: VideoDesk Homepage with two main buttons at footer - orange 'For Residents Share Photos and Videos' button and blue 'Enter Share Code' button*
 
-• **Upload Form**: Fill out the property information and upload your images/videos
+• **Upload Form**: Fill out the property information and upload your image/photo/videos
 
 • **Submit**: Submit the form with your details
 
@@ -76,7 +76,7 @@ VideoDesk is a comprehensive platform designed for property management that allo
 
 • **Starting a New Upload**: Click the "+ New Share Code" button on your dashboard
 
-![Resident Dashboard](./resident-images/dashboard.png)
+![Resident Dashboard](./resident-images/das.png)
 *Image 3: Resident Dashboard showing user profile and orange '+ New Share Code' button in top right corner along with bell notification icon*
 
 This will take you to the upload page
@@ -89,7 +89,7 @@ This will take you to the upload page
 • **Adding Media Files**:
 
 **Image Upload:**
-- **Maximum**: 6 images
+- **Maximum**: 6 image/photo
 - **Supported formats**: JPEG, PNG, WebP
 - **File size limit**: 10MB per image
 - **How to add**: Click the image upload area and select files
@@ -103,7 +103,7 @@ This will take you to the upload page
 - **How to add**: Click the video upload area and select files
 - **Labeling**: Add descriptive labels for each video
 
-![Image and Video Upload Section](./resident-images/images-and-videos.png)
+![Image and Video Upload Section](./resident-images/imagevi.png)
 *Image 5: Image and Video Upload Section on Upload Page, showing specific areas where users can drag and drop or select their media files*
 
 • **Submitting Your Upload**:
@@ -172,7 +172,7 @@ Your dashboard provides access to all resident features:
 
 • **Upload Problems**:
   **Issue**: Files not uploading
-  - **Solution**: Check file size (max 10MB) and format (JPEG, PNG, WebP for images; MP4, WebM, MOV for videos)
+  - **Solution**: Check file size (max 10MB) and format (JPEG, PNG, WebP for image/photo; MP4, WebM, MOV for videos)
   - **Solution**: Ensure stable internet connection
 
   **Issue**: Upload progress stuck
