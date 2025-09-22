@@ -40,10 +40,12 @@ VideoDesk is a comprehensive platform designed for property management that allo
 
 • **Visit the Website**: Go to the VideoDesk homepage
 
-![VideoDesk Homepage](./resident-images/homepage-buttons.png)
-*VideoDesk Homepage with two main buttons at footer - orange 'For Residents Share Photos and Videos' button and blue 'Enter Share Code' button*
+
 
 • **Footer Button**: Scroll down to the footer and click the "For Residents Share Photos and Videos" button
+
+![VideoDesk Homepage](./resident-images/homepage-buttons.png)
+*Image 1: VideoDesk Homepage with two main buttons at footer - orange 'For Residents Share Photos and Videos' button and blue 'Enter Share Code' button*
 
 • **Upload Form**: Fill out the property information and upload your images/videos
 
@@ -60,7 +62,7 @@ VideoDesk is a comprehensive platform designed for property management that allo
 • **Login**: Use your existing credentials to login from the home page
 
 ![Login Popup](./resident-images/login-popup.png)
-*Login Popup on Homepage, where existing users can enter their credentials to access their account*
+*Image 2: Login Popup on Homepage, where existing users can enter their credentials to access their account*
 
 • **Pre-filled Form**: If you're already logged in, the upload form will be automatically pre-filled with your account information
 
@@ -75,26 +77,14 @@ VideoDesk is a comprehensive platform designed for property management that allo
 • **Starting a New Upload**: Click the "+ New Share Code" button on your dashboard
 
 ![Resident Dashboard](./resident-images/dashboard.png)
-*Resident Dashboard showing user profile and orange '+ New Share Code' button in top right corner along with bell notification icon*
+*Image 3: Resident Dashboard showing user profile and orange '+ New Share Code' button in top right corner along with bell notification icon*
 
 This will take you to the upload page
 
 • **Filling Out Property Information**:
 
-**Required Fields:**
-- First Name and Last Name
-- House Name/Number
-- Street/Road
-- City and County
-- Postcode (actual postcode without spaces)
-- Phone Number
-- Email Address
-
-**Optional Fields:**
-- Flat/Apartment/Room (if applicable)
-
 ![File Upload Page](./resident-images/upload-page.png)
-*File Upload Page, where residents fill out property information and upload their images and videos*
+*Image 4: File Upload Page, where residents fill out property information and upload their images and videos*
 
 • **Adding Media Files**:
 
@@ -114,7 +104,7 @@ This will take you to the upload page
 - **Labeling**: Add descriptive labels for each video
 
 ![Image and Video Upload Section](./resident-images/images-and-videos.png)
-*Image and Video Upload Section on Upload Page, showing specific areas where users can drag and drop or select their media files*
+*Image 5: Image and Video Upload Section on Upload Page, showing specific areas where users can drag and drop or select their media files*
 
 • **Submitting Your Upload**:
   1. **Review**: Check all information is correct
@@ -128,13 +118,10 @@ This will take you to the upload page
   - **Time Limit**: Access codes are valid for 15 minutes for guest users
   - **Notifications**: You'll receive notifications when someone views your content
 
-• **Account Creation**:
-  - **Password Required**: The system will prompt you to create a password for your account
-  - **Secure Account**: Your account is created with the password you choose
-  - **Immediate Access**: You're logged in and can access all features right away
-  - **Future Logins**: Use your email and password to login next time
-
 ### 2.2 Access Code Features
+
+![Share Code](./resident-images/share-code.png)
+*Image 8: Share Code display showing the generated 4-digit access code*
 
 - **Unique Generation**: Each upload gets a unique 4-digit code
 - **Secure Sharing**: Only people with the code can access your content
@@ -150,7 +137,7 @@ This will take you to the upload page
 **Location**: Available at `/dashboard` after login
 
 ![Resident Dashboard Interface](./resident-images/dashboard.png)
-*Resident Dashboard Interface, showing all available features and navigation options for residents*
+*Image 6: Resident Dashboard Interface, showing all available features and navigation options for residents*
 
 Your dashboard provides access to all resident features:
 
@@ -159,7 +146,7 @@ Your dashboard provides access to all resident features:
   - **Notifications**: Real-time alerts when your content is viewed
 
     ![Notification Popup](./resident-images/notification-popup.png)
-    *Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*
+    *Image 7: Notification Popup that opens when clicking the bell icon on dashboard, showing real-time alerts and notifications*
   - **Recent Activity**: View your latest uploads and activities
   - **Quick Access**: Fast access to all platform features
 
